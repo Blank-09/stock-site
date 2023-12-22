@@ -1,14 +1,24 @@
 import React from 'react'
 
+// MUI
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+
 // Components
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <h1>Home Page</h1>
-    </div>
+
+      <Container sx={{ minHeight: '90vh' }}>
+        <h1>Home</h1>
+      </Container>
+
+      <Footer />
+    </>
   )
 }
 

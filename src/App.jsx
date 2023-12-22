@@ -1,8 +1,5 @@
 import React from 'react'
 
-// MUI
-import CssBaseline from '@mui/material/CssBaseline'
-
 // Router
 import { RouterProvider } from 'react-router-dom'
 
@@ -10,10 +7,17 @@ import { RouterProvider } from 'react-router-dom'
 import ThemeProvider from './components/ThemeProvider.jsx'
 import routes from './routes.jsx'
 
+// Others
+import { Toaster } from 'sonner'
+import useTheme from '@mui/material/styles/useTheme'
+
 const App = () => {
+  const theme = useTheme()
+
   return (
     <ThemeProvider>
       <RouterProvider router={routes} />
+      <Toaster richColors theme={theme.palette.mode} />
     </ThemeProvider>
   )
 }

@@ -1,22 +1,41 @@
-import { createBrowserRouter } from 'react-router-dom'
-import Home from './pages/Home'
+import React, { Suspense } from 'react'
+import { Outlet, createBrowserRouter } from 'react-router-dom'
 
+// MUI
+import Box from '@mui/material/Box'
+
+// Components
+import Loading from './components/Loading'
+
+//
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/register',
-    element: <h1>Register Page</h1>,
-  },
-  {
-    path: '/login',
-    element: <h1>Login Page</h1>,
-  },
-  {
-    path: '/logout',
-    element: <h1>Logging out</h1>,
+    element: (
+      <Box height="100vh">
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
+      </Box>
+    ),
+    children: [
+      {
+        path: '/',
+        Component: React.lazy(() => import('./pages/Home')),
+      },
+      {
+        path: '/register',
+        Component: React.lazy(() => import('./pages/Register')),
+      },
+      {
+        path: '/login',
+        Component: React.lazy(() => import('./pages/Login')),
+      },
+      {
+        path: '/logout',
+        element: <h1>Logging out...</h1>,
+      },
+    ],
   },
   {
     path: '/dashboard',
