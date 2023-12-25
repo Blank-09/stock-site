@@ -1,11 +1,12 @@
 import React, { Suspense } from 'react'
 import { Outlet, createBrowserRouter } from 'react-router-dom'
+import DashboardRoute from './dashboard'
 
 // MUI
 import Box from '@mui/material/Box'
 
 // Components
-import Loading from './components/Loading'
+import Loading from '../components/Loading'
 
 //
 const routes = createBrowserRouter([
@@ -21,15 +22,15 @@ const routes = createBrowserRouter([
     children: [
       {
         path: '/',
-        Component: React.lazy(() => import('./pages/Home')),
+        Component: React.lazy(() => import('../pages/Home')),
       },
       {
         path: '/register',
-        Component: React.lazy(() => import('./pages/Register')),
+        Component: React.lazy(() => import('../pages/Register')),
       },
       {
         path: '/login',
-        Component: React.lazy(() => import('./pages/Login')),
+        Component: React.lazy(() => import('../pages/Login')),
       },
       {
         path: '/logout',
@@ -39,7 +40,13 @@ const routes = createBrowserRouter([
   },
   {
     path: '/dashboard',
-    element: <h1>Dashboard</h1>,
+    element: <DashboardRoute />,
+    children: [
+      {
+        path: '.',
+        Component: React.lazy(() => import('../pages/Dashboard')),
+      },
+    ],
   },
 ])
 

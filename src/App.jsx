@@ -5,7 +5,7 @@ import { RouterProvider } from 'react-router-dom'
 
 // Components
 import ThemeProvider from './components/ThemeProvider.jsx'
-import routes from './routes.jsx'
+import routes from './routes/index.jsx'
 
 // Others
 import { Toaster } from 'sonner'
