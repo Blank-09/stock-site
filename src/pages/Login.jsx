@@ -98,6 +98,7 @@ export default function Login() {
                   <TextField
                     required
                     fullWidth
+                    autoFocus
                     id="email"
                     label="Email Address"
                     name="email"

@@ -10,13 +10,15 @@ import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import Menu from '@mui/material/Menu'
-import MenuIcon from '@mui/icons-material/Menu'
+// import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
-import Avatar from '@mui/material/Avatar'
-import Button from '@mui/material/Button'
+// import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import AdbIcon from '@mui/icons-material/Adb'
+
+// MUI Icons
+import Person from '@mui/icons-material/Person'
 
 // Components
 import ModeToggleButton from './ModeToggleButton'
@@ -40,7 +42,13 @@ export const settings = [
   { path: '/logout',         name: 'Logout'    },
 ]
 
-const Navbar = () => {
+/**
+ * Navbar Props
+ * @param {{ transparent: boolean }} param0
+ * @returns
+ */
+
+const Navbar = ({ transparent }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
 
@@ -50,7 +58,12 @@ const Navbar = () => {
   const handleCloseUserMenu = () => setAnchorElUser(null)
 
   return (
-    <AppBar position="sticky">
+    <AppBar
+      position="absolute"
+      color={transparent && 'transparent'}
+      sx={{ color: 'white' }}
+      elevation={transparent ? 0 : 1}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -72,7 +85,7 @@ const Navbar = () => {
             {company.name}
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -99,7 +112,7 @@ const Navbar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
 
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
@@ -120,7 +133,7 @@ const Navbar = () => {
           >
             {company.name}
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page.path}
@@ -132,16 +145,16 @@ const Navbar = () => {
                 {page.name}
               </Button>
             ))}
-          </Box>
+          </Box> */}
 
-          <Box sx={{ ms: 'auto' }}>
+          <Box sx={{ ml: 'auto', mr: 1 }}>
             <ModeToggleButton />
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: 'none' }}>
+          <Box>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Profile Picture" src="/vite.svg" />
+              <IconButton color="inherit" onClick={handleOpenUserMenu}>
+                <Person />
               </IconButton>
             </Tooltip>
             <Menu

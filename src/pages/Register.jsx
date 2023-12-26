@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 // MUI
 import Avatar from '@mui/material/Avatar'
@@ -49,19 +49,8 @@ export default function Register() {
   }
 
   return (
-    <Box
-      sx={{
-        minHeight: '100vh',
-        display: 'grid',
-        placeItems: 'center',
-      }}
-    >
-      <Container
-        component="main"
-        sx={{
-          padding: '3rem 1.5rem',
-        }}
-      >
+    <Box sx={{ display: 'grid', placeItems: 'center' }}>
+      <Container component="main" sx={{ paddingTop: 4 }}>
         <Paper
           style={{
             maxWidth: '500px',
