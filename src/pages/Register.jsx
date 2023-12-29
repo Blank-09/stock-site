@@ -83,7 +83,7 @@ export default function Register() {
             </Avatar>
             <Box
               component="form"
-              noValidate
+              // noValidate
               onSubmit={handleSubmit}
               sx={{ mt: 3 }}
             >
@@ -91,7 +91,7 @@ export default function Register() {
                 {message}
               </Typography>
               <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"
                     name="firstName"
@@ -111,15 +111,36 @@ export default function Register() {
                     name="lastName"
                     autoComplete="family-name"
                   />
+                </Grid> */}
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    id="userid"
+                    label="User Id"
+                    name="userid"
+                    autoComplete="userid"
+                  />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
                     required
                     fullWidth
                     id="email"
-                    label="Email Address"
+                    label="Email ID"
                     name="email"
+                    type="email"
                     autoComplete="email"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    // required
+                    fullWidth
+                    id="phoneno"
+                    label="Phone Number (optional)"
+                    name="phoneno"
+                    autoComplete="phoneno"
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -131,6 +152,32 @@ export default function Register() {
                     type={visible ? 'text' : 'password'}
                     id="password"
                     autoComplete="new-password"
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton
+                            onClick={() => setVisible((prev) => !prev)}
+                            edge="end"
+                          >
+                            {visible ? (
+                              <VisibilityIcon />
+                            ) : (
+                              <VisibilityOffIcon />
+                            )}
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    required
+                    fullWidth
+                    name="confirm-password"
+                    label="Confirm Password"
+                    type={visible ? 'text' : 'password'}
+                    id="confirm-password"
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">

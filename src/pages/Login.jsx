@@ -98,11 +98,10 @@ export default function Login() {
                   <TextField
                     required
                     fullWidth
-                    autoFocus
-                    id="email"
-                    label="Email Address"
-                    name="email"
-                    autoComplete="email"
+                    id="userid"
+                    label="User Id"
+                    name="userid"
+                    autoComplete="userid"
                   />
                 </Grid>
                 <Grid item xs={12}>

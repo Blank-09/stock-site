@@ -28,9 +28,10 @@ import MenuIcon from '@mui/icons-material/Menu'
 // Others
 import { Link } from 'react-router-dom'
 import { sidebarItems } from '../constants/dashboardSidebar'
+import { company } from '../constants'
 
 //
-const drawerWidth = 240
+const drawerWidth = 280
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -103,6 +104,10 @@ export default function SideBar() {
 
   const [collapseOpen, setCollapseOpen] = React.useState({})
 
+  if (!open && collapseOpen) {
+    setCollapseOpen(false)
+  }
+
   const handleClick = (index) => {
     setCollapseOpen({ ...collapseOpen, [index]: !collapseOpen[index] })
   }
@@ -132,13 +137,20 @@ export default function SideBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Material UI Dashboard
-          </Typography>
+          {!open && (
+            <Typography variant="h6" noWrap component="div">
+              {company.name}
+            </Typography>
+          )}
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
-        <DrawerHeader>
+        <DrawerHeader sx={{ bgcolor: 'primary.main', color: 'white' }}>
+          {open && (
+            <Typography sx={{ mr: 'auto' }} variant="h6" noWrap component="div">
+              {company.name}
+            </Typography>
+          )}
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? (
               <ChevronRightIcon />
@@ -158,10 +170,16 @@ export default function SideBar() {
                   disabled={!!item.children}
                   style={{ opacity: 1 }}
                 >
-                  <ListItemIcon>
-                    <item.icon />
+                  <ListItemIcon sx={{ color: 'primary.main' }}>
+                    <item.icon size="24" />
                   </ListItemIcon>
-                  <ListItemText primary={item.label} />
+                  <Typography sx={{ fontWeight: '500', mr: 'auto' }}>
+                    {item.label}
+                  </Typography>
+                  {/* <ListItemText
+                    sx={{ fontWeight: 'bold' }}
+                    primary={item.label}
+                  /> */}
                   {item.children ? (
                     collapseOpen[index] ? (
                       <ExpandLess />
@@ -173,12 +191,14 @@ export default function SideBar() {
               </ListItem>
               {item.children && (
                 <Collapse in={collapseOpen[index]} timeout="auto" unmountOnExit>
-                  <List disablePadding>
+                  <List disablePadding dense>
                     {item.children.map((child) => (
                       <ListItem key={child.label}>
                         <ListItemButton LinkComponent={Link} to={child.href}>
-                          <ListItemIcon>
-                            <child.icon />
+                          <ListItemIcon
+                            sx={{ color: 'primary.main', minWidth: '40px' }}
+                          >
+                            <child.icon sx={{ fontSize: '16px' }} />
                           </ListItemIcon>
                           <ListItemText primary={child.label} />
                         </ListItemButton>

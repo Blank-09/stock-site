@@ -1,3 +1,3 @@
 export const company = {
-  name: 'Stocks',
+  name: 'Team-Falcons',
 }
