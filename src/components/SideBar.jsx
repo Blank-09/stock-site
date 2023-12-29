@@ -150,7 +150,7 @@ export default function SideBar() {
         <Divider />
         <List>
           {sidebarItems.map((item, index) => (
-            <div key={item.text}>
+            <div key={item.label}>
               <ListItem disablePadding onClick={() => handleClick(index)}>
                 <ListItemButton
                   LinkComponent={Link}
@@ -161,7 +161,7 @@ export default function SideBar() {
                   <ListItemIcon>
                     <item.icon />
                   </ListItemIcon>
-                  <ListItemText primary={item.text} />
+                  <ListItemText primary={item.label} />
                   {item.children ? (
                     collapseOpen[index] ? (
                       <ExpandLess />
@@ -175,12 +175,12 @@ export default function SideBar() {
                 <Collapse in={collapseOpen[index]} timeout="auto" unmountOnExit>
                   <List disablePadding>
                     {item.children.map((child) => (
-                      <ListItem key={child.text}>
+                      <ListItem key={child.label}>
                         <ListItemButton LinkComponent={Link} to={child.href}>
                           <ListItemIcon>
                             <child.icon />
                           </ListItemIcon>
-                          <ListItemText primary={child.text} />
+                          <ListItemText primary={child.label} />
                         </ListItemButton>
                       </ListItem>
                     ))}

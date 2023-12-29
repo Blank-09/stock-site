@@ -5,26 +5,26 @@ export const sidebarItems = [
   {
     href: '/dashboard',
     icon: DashboardIcon,
-    text: 'Dashboard',
+    label: 'Dashboard',
   },
   {
     href: '/dashboard/Settings',
     icon: CategoryIcon,
-    text: 'Settings',
+    label: 'Settings',
   },
   {
     icon: CategoryIcon,
-    text: 'Products',
+    label: 'Products',
     children: [
       {
         href: '/dashboard/product/create',
         icon: CategoryIcon,
-        text: 'Create',
+        label: 'Create',
       },
       {
         href: '/dashboard/product/list',
         icon: CategoryIcon,
-        text: 'List',
+        label: 'List',
       },
     ],
   },
