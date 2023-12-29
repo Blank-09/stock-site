@@ -4,25 +4,28 @@ import { styled, useTheme } from '@mui/material/styles'
 
 // MUI
 import Box from '@mui/material/Box'
-import MuiDrawer from '@mui/material/Drawer'
-import MuiAppBar from '@mui/material/AppBar'
-import Toolbar from '@mui/material/Toolbar'
-import List from '@mui/material/List'
+import Collapse from '@mui/material/Collapse'
 import CssBaseline from '@mui/material/CssBaseline'
-import Typography from '@mui/material/Typography'
 import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
+import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
+import MuiDrawer from '@mui/material/Drawer'
+import MuiAppBar from '@mui/material/AppBar'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
 
 // MUI Icons
-import MenuIcon from '@mui/icons-material/Menu'
+import CategoryIcon from '@mui/icons-material/Category'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import DashboardIcon from '@mui/icons-material/Dashboard'
-import CategoryIcon from '@mui/icons-material/Category'
+import ExpandLess from '@mui/icons-material/ExpandLess'
+import ExpandMore from '@mui/icons-material/ExpandMore'
+import MenuIcon from '@mui/icons-material/Menu'
 
 // Router
 import { Link } from 'react-router-dom'
@@ -30,18 +33,33 @@ import { Link } from 'react-router-dom'
 //
 const drawerWidth = 240
 
-const listItems = [
+const items = [
   {
-    to: '/dashboard',
+    href: '/dashboard',
     icon: DashboardIcon,
     text: 'Dashboard',
   },
   {
-    to: '/dashboard/product',
+    href: '/dashboard/Settings',
     icon: CategoryIcon,
     text: 'Settings',
   },
-  // Add more items here as needed
+  {
+    icon: CategoryIcon,
+    text: 'Products',
+    children: [
+      {
+        href: '/dashboard/product/create',
+        icon: CategoryIcon,
+        text: 'Create',
+      },
+      {
+        href: '/dashboard/product/list',
+        icon: CategoryIcon,
+        text: 'List',
+      },
+    ],
+  },
 ]
 
 const openedMixin = (theme) => ({
@@ -113,6 +131,12 @@ export default function SideBar() {
   const theme = useTheme()
   const [open, setOpen] = React.useState(true)
 
+  const [collapseOpen, setCollapseOpen] = React.useState({})
+
+  const handleClick = (index) => {
+    setCollapseOpen({ ...collapseOpen, [index]: !collapseOpen[index] })
+  }
+
   const handleDrawerOpen = () => {
     setOpen(true)
   }
@@ -155,33 +179,45 @@ export default function SideBar() {
         </DrawerHeader>
         <Divider />
         <List>
-          {listItems.map((item) => (
-            <ListItem disablePadding sx={{ display: 'block' }} key={item.to}>
-              <ListItemButton
-                LinkComponent={Link}
-                to={item.to}
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
+          {items.map((item, index) => (
+            <div key={item.text}>
+              <ListItem disablePadding onClick={() => handleClick(index)}>
+                <ListItemButton
+                  LinkComponent={Link}
+                  to={item.href}
+                  disabled={!!item.children}
+                  style={{ opacity: 1 }}
                 >
-                  <item.icon />
-                </ListItemIcon>
-
-                <ListItemText
-                  primary={item.text}
-                  sx={{ opacity: open ? 1 : 0 }}
-                />
-              </ListItemButton>
-            </ListItem>
+                  <ListItemIcon>
+                    <item.icon />
+                  </ListItemIcon>
+                  <ListItemText primary={item.text} />
+                  {item.children ? (
+                    collapseOpen[index] ? (
+                      <ExpandLess />
+                    ) : (
+                      <ExpandMore />
+                    )
+                  ) : null}
+                </ListItemButton>
+              </ListItem>
+              {item.children && (
+                <Collapse in={collapseOpen[index]} timeout="auto" unmountOnExit>
+                  <List disablePadding>
+                    {item.children.map((child) => (
+                      <ListItem key={child.text}>
+                        <ListItemButton LinkComponent={Link} to={child.href}>
+                          <ListItemIcon>
+                            <child.icon />
+                          </ListItemIcon>
+                          <ListItemText primary={child.text} />
+                        </ListItemButton>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Collapse>
+              )}
+            </div>
           ))}
         </List>
       </Drawer>
