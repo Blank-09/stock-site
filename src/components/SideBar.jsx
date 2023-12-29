@@ -19,48 +19,18 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 
 // MUI Icons
-import CategoryIcon from '@mui/icons-material/Category'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import DashboardIcon from '@mui/icons-material/Dashboard'
 import ExpandLess from '@mui/icons-material/ExpandLess'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 import MenuIcon from '@mui/icons-material/Menu'
 
-// Router
+// Others
 import { Link } from 'react-router-dom'
+import { sidebarItems } from '../constants/dashboardSidebar'
 
 //
 const drawerWidth = 240
-
-const items = [
-  {
-    href: '/dashboard',
-    icon: DashboardIcon,
-    text: 'Dashboard',
-  },
-  {
-    href: '/dashboard/Settings',
-    icon: CategoryIcon,
-    text: 'Settings',
-  },
-  {
-    icon: CategoryIcon,
-    text: 'Products',
-    children: [
-      {
-        href: '/dashboard/product/create',
-        icon: CategoryIcon,
-        text: 'Create',
-      },
-      {
-        href: '/dashboard/product/list',
-        icon: CategoryIcon,
-        text: 'List',
-      },
-    ],
-  },
-]
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -179,7 +149,7 @@ export default function SideBar() {
         </DrawerHeader>
         <Divider />
         <List>
-          {items.map((item, index) => (
+          {sidebarItems.map((item, index) => (
             <div key={item.text}>
               <ListItem disablePadding onClick={() => handleClick(index)}>
                 <ListItemButton
