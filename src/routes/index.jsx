@@ -44,6 +44,10 @@ const routes = createBrowserRouter([
         path: '/dashboard',
         Component: React.lazy(() => import('../pages/Dashboard')),
       },
+      {
+        path: 'funds',
+        Component: React.lazy(() => import('../components/dashboard/Funds')),
+      },
     ],
   },
 ])

@@ -29,6 +29,7 @@ const chartData = {
 
 const options = {
   maintainAspectRatio: true,
+  responsive: false,
   scales: {
     x: {
       type: 'category',
@@ -42,9 +43,9 @@ const options = {
 
 const DashboardPage = () => {
   return (
-    <div>
+    <div style={{ width: '100%', position: 'relative' }}>
       <h1>Dashboard Page</h1>
-      <div style={{ width: '80%', margin: 'auto' }}>
+      <div style={{ width: '100%' }}>
         {/* Bar Chart */}
         <Bar options={options} data={chartData} />
       </div>

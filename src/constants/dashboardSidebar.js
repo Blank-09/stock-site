@@ -1,4 +1,3 @@
-import CategoryIcon from '@mui/icons-material/Category'
 import DashboardIcon from '@mui/icons-material/Dashboard'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import AssessmentIcon from '@mui/icons-material/Assessment'
@@ -12,7 +11,7 @@ export const sidebarItems = [
     label: 'Dashboard',
   },
   {
-    href: '/dashboard/Settings',
+    href: '/dashboard/funds',
     icon: TbMoneybag,
     label: 'Fund',
   },

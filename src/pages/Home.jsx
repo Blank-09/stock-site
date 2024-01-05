@@ -26,8 +26,8 @@ const Home = () => {
       <Box
         sx={{
           backgroundImage:
-            // "url('https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-            "url('https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1060&t=st=1703876148~exp=1703876748~hmac=94e62394ab432ce5a2cc528b0c8e955e6d7134c23faf5df64e73d7ee2006913b')",
+            "url('https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+          // "url('https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1060&t=st=1703876148~exp=1703876748~hmac=94e62394ab432ce5a2cc528b0c8e955e6d7134c23faf5df64e73d7ee2006913b')",
           // background: '#161A30',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',

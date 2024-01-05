@@ -12,11 +12,13 @@ import { Outlet } from 'react-router-dom'
 
 const DashboardRoute = () => {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', minHeight: '100vh' }}>
       <SideBar />
-      <Suspense fallback={<Loading />}>
-        <Outlet />
-      </Suspense>
+      <Box sx={{ pt: 8, width: '100%', height: '100vh' }}>
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
+      </Box>
     </Box>
   )
 }
