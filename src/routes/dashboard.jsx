@@ -14,7 +14,7 @@ const DashboardRoute = () => {
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
       <SideBar />
-      <Box sx={{ pt: 8, width: '100%', height: '100vh' }}>
+      <Box sx={{ pt: 8, width: '100%', height: '100vh', position: 'relative' }}>
         <Suspense fallback={<Loading />}>
           <Outlet />
         </Suspense>

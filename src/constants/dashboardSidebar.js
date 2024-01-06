@@ -20,7 +20,7 @@ export const sidebarItems = [
     label: 'EOD Data Analysis',
     children: [
       {
-        href: '/dashboard/product/create',
+        href: '/dashboard/option-analysis',
         icon: RadioButtonUncheckedIcon,
         label: 'Option Analysis',
       },
