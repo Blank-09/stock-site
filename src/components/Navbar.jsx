@@ -49,12 +49,12 @@ export const settings = [
  */
 
 const Navbar = ({ transparent }) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null)
+  // const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
 
-  const handleOpenNavMenu = (e) => setAnchorElNav(e.currentTarget)
+  // const handleOpenNavMenu = (e) => setAnchorElNav(e.currentTarget)
   const handleOpenUserMenu = (e) => setAnchorElUser(e.currentTarget)
-  const handleCloseNavMenu = () => setAnchorElNav(null)
+  // const handleCloseNavMenu = () => setAnchorElNav(null)
   const handleCloseUserMenu = () => setAnchorElUser(null)
 
   return (
@@ -75,9 +75,7 @@ const Navbar = ({ transparent }) => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              // fontFamily: 'monospace',
               fontWeight: 700,
-              // letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}

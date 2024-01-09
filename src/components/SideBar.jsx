@@ -26,9 +26,13 @@ import ExpandMore from '@mui/icons-material/ExpandMore'
 import MenuIcon from '@mui/icons-material/Menu'
 
 // Others
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { sidebarItems } from '../constants/dashboardSidebar'
 import { company } from '../constants'
+import ModeToggleButton from './ModeToggleButton'
+import { Menu, MenuItem, Tooltip } from '@mui/material'
+import { Person } from '@mui/icons-material'
+import { settings } from './Navbar'
 
 //
 const drawerWidth = 280
@@ -102,7 +106,11 @@ export default function SideBar() {
   const theme = useTheme()
   const [open, setOpen] = React.useState(true)
 
+  const [anchorElUser, setAnchorElUser] = React.useState(null)
   const [collapseOpen, setCollapseOpen] = React.useState({})
+
+  const handleOpenUserMenu = (e) => setAnchorElUser(e.currentTarget)
+  const handleCloseUserMenu = () => setAnchorElUser(null)
 
   if (!open && collapseOpen) {
     setCollapseOpen(false)
@@ -142,6 +150,40 @@ export default function SideBar() {
               {company.name}
             </Typography>
           )}
+
+          <Box sx={{ ml: 'auto', mr: 1 }}>
+            <ModeToggleButton />
+          </Box>
+
+          <Box>
+            <Tooltip title="Open settings">
+              <IconButton color="inherit" onClick={handleOpenUserMenu}>
+                <Person />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              anchorEl={anchorElUser}
+              sx={{ mt: '45px' }}
+              id="menu-appbar"
+              anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+              transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+              keepMounted
+            >
+              {settings.map((setting) => (
+                <MenuItem
+                  component={Link}
+                  to={setting.path}
+                  key={setting.path}
+                  onClick={handleCloseUserMenu}
+                  sx={{ textAlign: 'center', color: 'inherit' }}
+                >
+                  {setting.name}
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
@@ -165,7 +207,7 @@ export default function SideBar() {
             <div key={item.label}>
               <ListItem disablePadding onClick={() => handleClick(index)}>
                 <ListItemButton
-                  LinkComponent={Link}
+                  LinkComponent={NavLink}
                   to={item.href}
                   disabled={!!item.children}
                   style={{ opacity: 1 }}
@@ -194,7 +236,7 @@ export default function SideBar() {
                   <List disablePadding dense>
                     {item.children.map((child) => (
                       <ListItem key={child.label}>
-                        <ListItemButton LinkComponent={Link} to={child.href}>
+                        <ListItemButton LinkComponent={NavLink} to={child.href}>
                           <ListItemIcon
                             sx={{ color: 'primary.main', minWidth: '40px' }}
                           >

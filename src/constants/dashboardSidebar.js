@@ -6,7 +6,7 @@ import { TbMoneybag } from 'react-icons/tb'
 
 export const sidebarItems = [
   {
-    href: '/dashboard',
+    href: '/dashboard/home',
     icon: DashboardIcon,
     label: 'Dashboard',
   },
@@ -40,5 +40,10 @@ export const sidebarItems = [
     href: '/dashboard/Settings',
     icon: StarIcon,
     label: 'Recommendation',
+  },
+  {
+    href: '/dashboard/Settings',
+    icon: StarIcon,
+    label: 'Virtual Trading',
   },
 ]

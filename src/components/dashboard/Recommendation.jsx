@@ -17,69 +17,52 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 
-// Others
-// import { faker } from '@faker-js/faker'
+
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 const columns = [
   { field: 'id', headerName: '#', width: 70, sortable: false },
-  { field: 'Symbol', headerName: 'Symbol', width: 150, sortable: false },
-  { field: 'Expiry', headerName: 'Expiry', width: 150, sortable: false },
-  { field: 'Strike', headerName: 'Strike', width: 150, sortable: false },
+  { field: 'Script', headerName: 'Script', width: 150, sortable: false },
+  { field: 'Recommanded Date', headerName: 'Recommanded Date', width: 150, sortable: false },
+  { field: 'Price', headerName: 'Price', width: 150, sortable: false },
   {
-    field: 'OptionType',
-    headerName: 'Option Type',
+    field: 'LTP',
+    headerName: 'LTP',
     width: 150,
     sortable: false,
   },
   {
-    field: 'ClosePrice',
-    headerName: 'Close Price',
+    field: 'Buy/Sell',
+    headerName: 'Buy/Sell',
     width: 150,
     sortable: false,
   },
-  { field: 'OI', headerName: 'OI', width: 150, sortable: false },
-  { field: 'OIChange', headerName: 'OI Change', width: 150, sortable: false },
   {
-    field: 'Interpretation',
-    headerName: 'Interpretation',
-    width: 150,
+    field: 'Change',
+    headerName: 'Change',
+    width: 200,
+    sortable: false,
     renderCell: (params) => {
-      let chipColor,
-        Icon = FiberManualRecordIcon
-      switch (params.row.Interpretation) {
-        case 'Short builtup':
-          chipColor = 'error'
-          Icon = KeyboardDoubleArrowDownIcon
-          break
-        case 'Short Covering':
-          chipColor = 'success'
-          Icon = KeyboardDoubleArrowUpIcon
-          break
-        case 'Long buildup':
-          chipColor = 'lightGreen'
-          Icon = KeyboardArrowUpIcon
-          break
-        case 'Long Unwinding':
-          chipColor = 'lightRed'
-          Icon = KeyboardArrowDownIcon
-          break
-        default:
-          chipColor = 'default'
-      }
+      const ltp = parseFloat(params.row.LTP);
+      const price = parseFloat(params.row.Price);
+      const difference = ltp - price;
+      const percentageChange = ((difference / price) * 100).toFixed(2);
 
       return (
-        <Chip
-          size="small"
-          sx={{ borderRadius: '5px', width: '100%' }}
-          label={params.row.Interpretation}
-          color={chipColor}
-          icon={<Icon />}
-        />
-      )
+        <div>
+          <div style={{ color: difference >= 0 ? 'green' : 'red' }}>
+            {difference.toFixed(2)} ({percentageChange}%)
+          </div>
+        </div>
+      );
     },
   },
+  { field: 'StopLoss', headerName: 'StopLoss', width: 150, sortable: false },
+  { field: 'Status', headerName: 'Status', width: 150, sortable: false },
+  { field: 'Comment', headerName: 'Comment', width: 150, sortable: false },
+
+  /*
   {
     field: 'Trend',
     headerName: 'Trend',
@@ -114,7 +97,7 @@ const columns = [
         />
       )
     },
-  },
+  },*/
 ]
 
 /*
@@ -141,7 +124,7 @@ const columns = [
 
 // const rows = Array.from({ length: 100 }, (_, i) => createRowData(i + 1));
 
-export default function OptionAnalysis() {
+export default function Recommendation() {
   const [rows, setRows] = useState([])
   const [scriptNames, setScriptNames] = useState([])
 
@@ -159,7 +142,7 @@ export default function OptionAnalysis() {
   }
 
   useEffect(() => {
-    axios.get('/option-analysis.json').then((res) => {
+    axios.get('/recommendation.json').then((res) => {
       res.data.map((row, index) => {
         row['id'] = index + 1
         return row
@@ -167,9 +150,7 @@ export default function OptionAnalysis() {
       setRows(res.data)
     })
 
-    axios.get('/script-name.json').then((res) => {
-      setScriptNames(res.data)
-    })
+    
   }, [])
 
   return (

@@ -41,11 +41,11 @@ const routes = createBrowserRouter([
     element: <DashboardRoute />,
     children: [
       {
-        path: '/dashboard',
+        path: '/dashboard/home',
         Component: React.lazy(() => import('../pages/Dashboard')),
       },
       {
-        path: 'option-analysis',
+        path: '/dashboard/option-analysis',
         Component: React.lazy(() =>
           import('../components/dashboard/OptionAnalysis')
         ),
