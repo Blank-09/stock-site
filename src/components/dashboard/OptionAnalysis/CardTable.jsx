@@ -12,7 +12,7 @@ const CardTable = ({ label, rows }) => {
       <Typography variant="h5" sx={{ p: 2 }}>
         {label}
       </Typography>
-      <Table aria-label={label + ' table'}>
+      <Table size="medium" aria-label={label + ' table'}>
         <TableBody>
           {rows.map((row) => (
             <TableRow

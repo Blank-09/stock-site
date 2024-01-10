@@ -26,19 +26,11 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Container } from '@mui/material'
 import { scriptNames } from '../../../constants/option-analysis'
 
-import Paper from '@mui/material/Paper'
-import TrendTable from './TrendTable'
-import InterpretationTable from './InterpretationTable'
+// import TrendTable from './TrendTable'
+// import InterpretationTable from './InterpretationTable'
+import AnalysisTable from './AnalysisTable'
 
 let columns = [
-  // { field: 'id', headerName: '#', width: 70, sortable: false },
-  // { field: 'Symbol', headerName: 'Symbol', width: 150, sortable: false },
-  // {
-  //   field: 'Expiry',
-  //   headerName: 'Expiry',
-  //   width: 150,
-  //   sortable: false,
-  // },
   {
     field: 'Trend',
     headerName: 'Trend',
@@ -109,7 +101,7 @@ let columns = [
         <Chip
           size="small"
           sx={{ borderRadius: '5px', width: '100%' }}
-          label={value}
+          label={value === 'Long Unwinding' ? 'Long Unwind' : value}
           color={chipColor}
           icon={<Icon />}
         />
@@ -219,7 +211,7 @@ let columns = [
         <Chip
           size="small"
           sx={{ borderRadius: '5px', width: '100%' }}
-          label={value}
+          label={value === 'Long Unwinding' ? 'Long Unwind' : value}
           color={chipColor}
           icon={<Icon />}
         />
@@ -275,6 +267,8 @@ export default function OptionAnalysis() {
   const [rows, setRows] = useState([])
   const [expiryDates, setExpiryDates] = useState(['Select'])
   const [searchParams, setSearchParams] = useSearchParams()
+
+  console.log(rows)
 
   const navigator = useNavigate()
 
@@ -464,8 +458,10 @@ export default function OptionAnalysis() {
       </Box>
 
       <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
-        <TrendTable />
-        <InterpretationTable />
+        <AnalysisTable label="Call" data={data} />
+        {/* <AnalysisTable label="Put" data={data} /> */}
+        {/* <TrendTable data={data} />
+        <InterpretationTable data={data} /> */}
       </Box>
     </Container>
   )
