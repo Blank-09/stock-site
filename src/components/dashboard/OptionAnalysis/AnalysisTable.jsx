@@ -5,7 +5,6 @@ import TableCell from '@mui/material/TableCell'
 import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
-import Typography from '@mui/material/Typography'
 import { useMemo } from 'react'
 
 const AnalysisTable = ({ label, data }) => {

@@ -1,34 +1,28 @@
+import { useEffect, useMemo, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+
 // MUI
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Chip from '@mui/material/Chip'
+import Container from '@mui/material/Container'
 import InputLabel from '@mui/material/InputLabel'
 import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
+import Typography from '@mui/material/Typography'
 import { DataGrid } from '@mui/x-data-grid'
 
-// MUI Icons
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
-import RemoveIcon from '@mui/icons-material/Remove'
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord'
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown'
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+// Components
+import AnalysisTable from './AnalysisTable'
+import AnalysisChip from '../../ui/AnalysisChip'
 
 // Others
-// import { faker } from '@faker-js/faker'
-import { useEffect, useMemo, useState } from 'react'
 import axios from 'axios'
-import { useNavigate, useSearchParams } from 'react-router-dom'
-import { Container } from '@mui/material'
 import { scriptNames } from '../../../constants/option-analysis'
-
-// import TrendTable from './TrendTable'
-// import InterpretationTable from './InterpretationTable'
-import AnalysisTable from './AnalysisTable'
+import {
+  combineRows,
+  getInterpretation,
+  getTrend,
+} from '../../../utils/analysis'
 
 let columns = [
   {
@@ -37,34 +31,9 @@ let columns = [
     width: 100,
     renderCell: (params) => {
       const value = params.row.CE?.Trend
-      let chipColor, Icon
-      switch (value) {
-        case 'Bullish':
-          chipColor = 'success'
-          Icon = ArrowUpwardIcon
-          break
-        case 'Neutral':
-          chipColor = 'warning'
-          Icon = RemoveIcon
-          break
-        case 'Bearish':
-          chipColor = 'error'
-          Icon = ArrowDownwardIcon
-          break
-        default:
-          chipColor = 'default'
-          Icon = RemoveIcon
-      }
+      const { Icon, chipColor } = getTrend(value)
 
-      return (
-        <Chip
-          size="small"
-          sx={{ borderRadius: '5px', width: '100%' }}
-          label={value}
-          color={chipColor}
-          icon={<Icon />}
-        />
-      )
+      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
   {
@@ -73,39 +42,9 @@ let columns = [
     width: 150,
     renderCell: (params) => {
       const value = params.row.CE?.Interpretation
-      let chipColor,
-        Icon = FiberManualRecordIcon
+      const { Icon, chipColor } = getInterpretation(value)
 
-      switch (value) {
-        case 'Short builtup':
-          chipColor = 'error'
-          Icon = KeyboardDoubleArrowDownIcon
-          break
-        case 'Short Covering':
-          chipColor = 'success'
-          Icon = KeyboardDoubleArrowUpIcon
-          break
-        case 'Long buildup':
-          chipColor = 'lightGreen'
-          Icon = KeyboardArrowUpIcon
-          break
-        case 'Long Unwinding':
-          chipColor = 'lightRed'
-          Icon = KeyboardArrowDownIcon
-          break
-        default:
-          chipColor = 'default'
-      }
-
-      return (
-        <Chip
-          size="small"
-          sx={{ borderRadius: '5px', width: '100%' }}
-          label={value === 'Long Unwinding' ? 'Long Unwind' : value}
-          color={chipColor}
-          icon={<Icon />}
-        />
-      )
+      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
 
@@ -114,43 +53,33 @@ let columns = [
     headerName: 'OI',
     valueGetter: (params) => params.row.CE?.OI,
     width: 70,
-    sortable: false,
   },
   {
     field: 'OIChange',
     headerName: 'OI Change',
     valueGetter: (params) => params.row.CE?.OIChange,
     width: 100,
-    sortable: false,
   },
   {
     field: 'ClosePrice',
     headerName: 'Close Price',
     valueGetter: (params) => params.row.CE?.ClosePrice,
     width: 125,
-    sortable: false,
   },
   {
     field: 'Strike',
     headerName: 'Strike',
     width: 150,
-    sortable: false,
     headerAlign: 'center',
 
     renderCell: (params) => {
       return (
         <Typography
           variant="body2"
-          component="div"
           color="primary"
-          sx={{
-            height: '100%',
-            width: '100%',
-            fontWeight: 'bold',
-            display: 'grid',
-            placeItems: 'center',
-            textAlign: 'center',
-          }}
+          height="100%"
+          fontWeight="bold"
+          sx={{ display: 'grid', placeItems: 'center' }}
         >
           {params.value}
         </Typography>
@@ -162,21 +91,18 @@ let columns = [
     headerName: 'Close Price',
     valueGetter: (params) => params.row.PE?.ClosePrice,
     width: 125,
-    sortable: false,
   },
   {
     field: 'OIChange2',
     headerName: 'OI Change',
     valueGetter: (params) => params.row.PE?.OIChange,
     width: 100,
-    sortable: false,
   },
   {
     field: 'OI2',
     headerName: 'OI',
     valueGetter: (params) => params.row.PE?.OI,
     width: 100,
-    sortable: false,
   },
   {
     field: 'Interpretation2',
@@ -184,38 +110,9 @@ let columns = [
     width: 150,
     renderCell: (params) => {
       const value = params.row.PE?.Interpretation
-      let chipColor,
-        Icon = FiberManualRecordIcon
-      switch (value) {
-        case 'Short builtup':
-          chipColor = 'error'
-          Icon = KeyboardDoubleArrowDownIcon
-          break
-        case 'Short Covering':
-          chipColor = 'success'
-          Icon = KeyboardDoubleArrowUpIcon
-          break
-        case 'Long buildup':
-          chipColor = 'lightGreen'
-          Icon = KeyboardArrowUpIcon
-          break
-        case 'Long Unwinding':
-          chipColor = 'lightRed'
-          Icon = KeyboardArrowDownIcon
-          break
-        default:
-          chipColor = 'default'
-      }
+      const { Icon, chipColor } = getInterpretation(value)
 
-      return (
-        <Chip
-          size="small"
-          sx={{ borderRadius: '5px', width: '100%' }}
-          label={value === 'Long Unwinding' ? 'Long Unwind' : value}
-          color={chipColor}
-          icon={<Icon />}
-        />
-      )
+      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
   {
@@ -224,34 +121,9 @@ let columns = [
     width: 100,
     renderCell: (params) => {
       const value = params.row.PE?.Trend
-      let chipColor, Icon
-      switch (value) {
-        case 'Bullish':
-          chipColor = 'success'
-          Icon = ArrowUpwardIcon
-          break
-        case 'Neutral':
-          chipColor = 'warning'
-          Icon = RemoveIcon
-          break
-        case 'Bearish':
-          chipColor = 'error'
-          Icon = ArrowDownwardIcon
-          break
-        default:
-          chipColor = 'default'
-          Icon = RemoveIcon
-      }
+      const { Icon, chipColor } = getTrend(value)
 
-      return (
-        <Chip
-          size="small"
-          sx={{ borderRadius: '5px', width: '100%' }}
-          label={value}
-          color={chipColor}
-          icon={<Icon />}
-        />
-      )
+      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
 ]
@@ -260,6 +132,8 @@ columns = columns.map((col, index) => ({
   ...col,
   headerAlign: 'center',
   align: 'center',
+  sortable: false,
+  // applying border to cell except first column
   cellClassName: index && 'borderCell',
 }))
 
@@ -267,8 +141,6 @@ export default function OptionAnalysis() {
   const [rows, setRows] = useState([])
   const [expiryDates, setExpiryDates] = useState(['Select'])
   const [searchParams, setSearchParams] = useSearchParams()
-
-  console.log(rows)
 
   const navigator = useNavigate()
 
@@ -292,6 +164,8 @@ export default function OptionAnalysis() {
     })
   }, [rows, searchParams])
 
+  console.log(data)
+
   const handleChange = (event) => {
     setSearchParams({
       [event.target.name]: event.target.value,
@@ -300,28 +174,9 @@ export default function OptionAnalysis() {
 
   useEffect(() => {
     axios.get('/option-analysis.json').then((res) => {
-      const combinedRows = res.data.reduce((acc, row) => {
-        const existingRow = acc.find(
-          (r) => r.Strike === row.Strike && r.Symbol === row.Symbol
-        )
-
-        if (existingRow) {
-          existingRow[row.OptionType] = row
-        } else {
-          acc.push({
-            id: acc.length + 1,
-            Symbol: row.Symbol,
-            Strike: row.Strike,
-            Expiry: row.Expiry,
-            [row.OptionType]: row,
-          })
-        }
-
-        return acc
-      }, [])
+      const combinedRows = combineRows(res.data)
 
       const set = new Set()
-
       combinedRows.forEach((row) => {
         set.add(row.Expiry)
       })
@@ -459,9 +314,6 @@ export default function OptionAnalysis() {
 
       <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
         <AnalysisTable label="Call" data={data} />
-        {/* <AnalysisTable label="Put" data={data} /> */}
-        {/* <TrendTable data={data} />
-        <InterpretationTable data={data} /> */}
       </Box>
     </Container>
   )
