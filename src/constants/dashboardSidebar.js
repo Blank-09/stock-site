@@ -25,24 +25,24 @@ export const sidebarItems = [
         label: 'Option Analysis',
       },
       {
-        href: '/dashboard/product/list',
+        href: '/dashboard/future-analysis',
         icon: RadioButtonUncheckedIcon,
         label: 'Future Analysis',
       },
       {
-        href: '/dashboard/product/list',
+        href: '/dashboard/cash-segment-analysis',
         icon: RadioButtonUncheckedIcon,
         label: 'Cash Segment Analysis',
       },
     ],
   },
   {
-    href: '/dashboard/Settings',
+    href: '/dashboard/recommendation',
     icon: StarIcon,
     label: 'Recommendation',
   },
   {
-    href: '/dashboard/Settings',
+    href: '/dashboard/virtual-trading',
     icon: StarIcon,
     label: 'Virtual Trading',
   },

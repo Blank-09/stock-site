@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -142,7 +142,7 @@ export default function OptionAnalysis() {
   const [expiryDates, setExpiryDates] = useState(['Select'])
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const navigator = useNavigate()
+  // const navigator = useNavigate()
 
   // Used useMemo to avoid re-rendering of the table
   const data = useMemo(() => {
@@ -152,23 +152,40 @@ export default function OptionAnalysis() {
 
     // Filtering rows based on search params
     return rows.filter((row) => {
+      let res = true
+
       if (searchParams.get('indices')) {
-        return row.Symbol === searchParams.get('indices')
+        res = res && row.Symbol === searchParams.get('indices')
       } else if (searchParams.get('scriptName')) {
-        return row.Symbol === searchParams.get('scriptName')
-      } else if (searchParams.get('expiryDate')) {
-        return row.Expiry === searchParams.get('expiryDate')
+        res = res && row.Symbol === searchParams.get('scriptName')
       }
 
-      return row
+      if (searchParams.get('expiryDate')) {
+        res = res && row.Expiry === searchParams.get('expiryDate')
+      }
+
+      return res
     })
   }, [rows, searchParams])
 
-  console.log(data)
-
   const handleChange = (event) => {
-    setSearchParams({
-      [event.target.name]: event.target.value,
+    const { name, value } = event.target
+
+    setSearchParams((prev) => {
+      let newParams = new URLSearchParams(prev)
+
+      if (name === 'indices' || name === 'scriptName') {
+        newParams.delete('indices')
+        newParams.delete('scriptName')
+      }
+
+      if (!prev.get('indices') && !prev.get('scriptName')) {
+        newParams.set('indices', 'NIFTY')
+      }
+
+      newParams.set(name, value)
+
+      return newParams
     })
   }
 
@@ -182,17 +199,26 @@ export default function OptionAnalysis() {
       })
 
       const expiryDates = [...set].sort((a, b) => new Date(a) - new Date(b))
+      let obj = {}
+
+      if (!searchParams.get('expiryDate')) {
+        searchParams.forEach((value, key) => {
+          obj[key] = value
+        })
+
+        obj = {
+          ...obj,
+          expiryDate: expiryDates[0],
+        }
+      }
 
       setExpiryDates(expiryDates)
       setRows(combinedRows)
-    })
 
-    if (
-      window.location.pathname === '/dashboard/option-analysis' &&
-      window.location.search === ''
-    ) {
-      navigator('/dashboard/option-analysis?indices=NIFTY')
-    }
+      if (searchParams.size === 0) {
+        setSearchParams({ ...obj, indices: 'NIFTY' })
+      }
+    })
   }, [])
 
   return (
@@ -205,9 +231,9 @@ export default function OptionAnalysis() {
         <FormControl width={10} sx={{ minWidth: 120 }}>
           <InputLabel id="indicies-label">Indicies</InputLabel>
           <Select
+            autoWidth
             labelId="indicies-label"
             id="indicies-select"
-            autoWidth
             value={searchParams.get('indices') || 'Select'}
             name="indices"
             label="Indicies"
@@ -262,7 +288,7 @@ export default function OptionAnalysis() {
             id="expiry-date-select"
             name="expiryDate"
             autoWidth
-            value={searchParams.get('expiryDate') || expiryDates[0] || 'Select'}
+            value={searchParams.get('expiryDate') || 'Select'}
             label="Expiry Date"
             onChange={handleChange}
           >
@@ -300,19 +326,16 @@ export default function OptionAnalysis() {
           </Typography>
         </Box>
         <DataGrid
-          sx={{ height: '100%' }}
           rows={data}
           rowHeight={25}
           columns={columns}
           pageSizeOptions={[25]}
-          initialState={{
-            pagination: { paginationModel: { pageSize: 25 } },
-          }}
+          initialState={{ pagination: { paginationModel: { pageSize: 25 } } }}
           // autoPageSize
         />
       </Box>
 
-      <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+      <Box sx={{ mt: 2 }}>
         <AnalysisTable label="Call" data={data} />
       </Box>
     </Container>

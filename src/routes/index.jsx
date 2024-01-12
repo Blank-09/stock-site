@@ -50,6 +50,36 @@ const routes = createBrowserRouter([
           import('../components/dashboard/OptionAnalysis')
         ),
       },
+      {
+        path: '/dashboard/future-analysis',
+        Component: React.lazy(() =>
+          import('../components/dashboard/OptionAnalysis')
+        ),
+      },
+      {
+        path: '/dashboard/cash-segment-analysis',
+        Component: React.lazy(() =>
+          import('../components/dashboard/OptionAnalysis')
+        ),
+      },
+      {
+        path: '/dashboard/funds',
+        Component: React.lazy(() =>
+          import('../components/dashboard/ImplementationMessage')
+        ),
+      },
+      {
+        path: '/dashboard/recommendation',
+        Component: React.lazy(() =>
+          import('../components/dashboard/ImplementationMessage')
+        ),
+      },
+      {
+        path: '/dashboard/virtual-trading',
+        Component: React.lazy(() =>
+          import('../components/dashboard/ImplementationMessage')
+        ),
+      },
     ],
   },
 ])
