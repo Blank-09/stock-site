@@ -1,5 +1,7 @@
 # Stock Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c66b141-82fa-4a9e-b53f-5db178c53cf7/deploy-status)](https://app.netlify.com/sites/team-falcons/deploys)
+
 This is a stock site built with React. It provides features such as viewing stock details, user registration, login, and settings.
 
 ## 🗼 Project Structure

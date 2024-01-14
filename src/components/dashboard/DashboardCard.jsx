@@ -34,11 +34,11 @@ const DashboardCard = ({
         </Typography>
       </div>
 
-      <div>
+      {/* <div>
         <Typography component="span" variant="body2">
           {lastUpdated}
         </Typography>
-      </div>
+      </div> */}
     </Box>
   </Card>
 )

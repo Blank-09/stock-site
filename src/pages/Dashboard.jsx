@@ -27,19 +27,22 @@ const Dashboard = () => {
       >
         <div>
           <Typography component="span" fontWeight="bold">
-            Date Time:{' '}
+            Date:{' '}
           </Typography>
           <Typography component="span">
-            {new Date().toLocaleDateString('en-US', {
-              weekday: 'long',
-              year: '2-digit',
+            {new Date().toLocaleTimeString('en-IN', {
+              // weekday: 'long',
+              hour: '2-digit',
+              minute: '2-digit',
+              second: '2-digit',
+              year: 'numeric',
               month: 'short',
               day: '2-digit',
             })}
           </Typography>
           <br />
           <Typography component="span" fontWeight="bold">
-            Market Time:{' '}
+            Market:{' '}
           </Typography>
           <Typography component="span">Open </Typography>
         </div>

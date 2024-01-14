@@ -151,7 +151,7 @@ export default function OptionAnalysis() {
     }
 
     // Filtering rows based on search params
-    return rows.filter((row) => {
+    const filteredRows = rows.filter((row) => {
       let res = true
 
       if (searchParams.get('indices')) {
@@ -159,6 +159,20 @@ export default function OptionAnalysis() {
       } else if (searchParams.get('scriptName')) {
         res = res && row.Symbol === searchParams.get('scriptName')
       }
+
+      return res
+    })
+
+    const set = new Set()
+    filteredRows.forEach((row) => set.add(row.Expiry))
+
+    const expiryDates = ['Select', ...set].sort(
+      (a, b) => new Date(a) - new Date(b)
+    )
+    setExpiryDates(expiryDates)
+
+    return filteredRows.filter((row) => {
+      let res = true
 
       if (searchParams.get('expiryDate')) {
         res = res && row.Expiry === searchParams.get('expiryDate')

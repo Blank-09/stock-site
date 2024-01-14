@@ -58,6 +58,9 @@ const routes = createBrowserRouter([
       },
       {
         path: '/dashboard/cash-segment-analysis',
+        loader: (data) => {
+          return data
+        },
         Component: React.lazy(() =>
           import('../components/dashboard/OptionAnalysis')
         ),
