@@ -8,13 +8,8 @@
 
 ### Dashboard
 
-- [ ] Cards 4
-
-  - [ ] Nifty, Bank Nifty, Fin Nifty, Nifty IT, Sensex...
-
-    - Current value: [value] (change %)
-    - ![Alt text](image.png)
-
-  - Top right
-    - [ ] Date time
-    - [ ] Market Time: Open (9:15 AM - 3:30 PM) / Close
+- Card Collage in the dashboard
+- functional login page
+- admin access
+- virtual trading icon
+- EOT analysis pages separate

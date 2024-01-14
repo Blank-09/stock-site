@@ -1,5 +1,6 @@
+import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useLoaderData, useSearchParams } from 'react-router-dom'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -13,136 +14,28 @@ import { DataGrid } from '@mui/x-data-grid'
 
 // Components
 import AnalysisTable from './AnalysisTable'
-import AnalysisChip from '../../ui/AnalysisChip'
+import { AnalysisColumns } from './AnalysisColumns'
 
 // Others
-import axios from 'axios'
-import { scriptNames } from '../../../constants/option-analysis'
-import {
-  combineRows,
-  getInterpretation,
-  getTrend,
-} from '../../../utils/analysis'
-
-let columns = [
-  {
-    field: 'Trend',
-    headerName: 'Trend',
-    width: 100,
-    renderCell: (params) => {
-      const value = params.row.CE?.Trend
-      const { Icon, chipColor } = getTrend(value)
-
-      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
-    },
-  },
-  {
-    field: 'Interpretation',
-    headerName: 'Interpretation',
-    width: 150,
-    renderCell: (params) => {
-      const value = params.row.CE?.Interpretation
-      const { Icon, chipColor } = getInterpretation(value)
-
-      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
-    },
-  },
-
-  {
-    field: 'OI',
-    headerName: 'OI',
-    valueGetter: (params) => params.row.CE?.OI,
-    width: 70,
-  },
-  {
-    field: 'OIChange',
-    headerName: 'OI Change',
-    valueGetter: (params) => params.row.CE?.OIChange,
-    width: 100,
-  },
-  {
-    field: 'ClosePrice',
-    headerName: 'Close Price',
-    valueGetter: (params) => params.row.CE?.ClosePrice,
-    width: 125,
-  },
-  {
-    field: 'Strike',
-    headerName: 'Strike',
-    width: 150,
-    headerAlign: 'center',
-
-    renderCell: (params) => {
-      return (
-        <Typography
-          variant="body2"
-          color="primary"
-          height="100%"
-          fontWeight="bold"
-          sx={{ display: 'grid', placeItems: 'center' }}
-        >
-          {params.value}
-        </Typography>
-      )
-    },
-  },
-  {
-    field: 'ClosePrice2',
-    headerName: 'Close Price',
-    valueGetter: (params) => params.row.PE?.ClosePrice,
-    width: 125,
-  },
-  {
-    field: 'OIChange2',
-    headerName: 'OI Change',
-    valueGetter: (params) => params.row.PE?.OIChange,
-    width: 100,
-  },
-  {
-    field: 'OI2',
-    headerName: 'OI',
-    valueGetter: (params) => params.row.PE?.OI,
-    width: 100,
-  },
-  {
-    field: 'Interpretation2',
-    headerName: 'Interpretation',
-    width: 150,
-    renderCell: (params) => {
-      const value = params.row.PE?.Interpretation
-      const { Icon, chipColor } = getInterpretation(value)
-
-      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
-    },
-  },
-  {
-    field: 'Trend2',
-    headerName: 'Trend',
-    width: 100,
-    renderCell: (params) => {
-      const value = params.row.PE?.Trend
-      const { Icon, chipColor } = getTrend(value)
-
-      return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
-    },
-  },
-]
-
-columns = columns.map((col, index) => ({
-  ...col,
-  headerAlign: 'center',
-  align: 'center',
-  sortable: false,
-  // applying border to cell except first column
-  cellClassName: index && 'borderCell',
-}))
+import { indices, scriptNames } from '../../../constants/option-analysis'
+import { combineRows } from '../../../utils/analysis'
 
 export default function OptionAnalysis() {
+  const loaderData = useLoaderData()
+
+  console.log(loaderData)
+
   const [rows, setRows] = useState([])
   const [expiryDates, setExpiryDates] = useState(['Select'])
   const [searchParams, setSearchParams] = useSearchParams()
 
-  // const navigator = useNavigate()
+  function handleSearchParamChange(key, value) {
+    setSearchParams((prev) => {
+      let newParams = new URLSearchParams(prev)
+      newParams.set(key, value)
+      return newParams
+    })
+  }
 
   // Used useMemo to avoid re-rendering of the table
   const data = useMemo(() => {
@@ -182,6 +75,12 @@ export default function OptionAnalysis() {
     })
   }, [rows, searchParams])
 
+  useEffect(() => {
+    if (expiryDates.length > 1) {
+      handleSearchParamChange('expiryDate', expiryDates[1])
+    }
+  }, [expiryDates])
+
   const handleChange = (event) => {
     const { name, value } = event.target
 
@@ -191,6 +90,7 @@ export default function OptionAnalysis() {
       if (name === 'indices' || name === 'scriptName') {
         newParams.delete('indices')
         newParams.delete('scriptName')
+        newParams.set('expiryDate', 'Select')
       }
 
       if (!prev.get('indices') && !prev.get('scriptName')) {
@@ -204,7 +104,7 @@ export default function OptionAnalysis() {
   }
 
   useEffect(() => {
-    axios.get('/option-analysis.json').then((res) => {
+    axios.get(loaderData.url).then((res) => {
       const combinedRows = combineRows(res.data)
 
       const set = new Set()
@@ -241,7 +141,7 @@ export default function OptionAnalysis() {
       style={{ width: '100%', height: '100%' }}
       sx={{ flexGrow: 1, p: 3, maxWidth: '1320px!important' }}
     >
-      <Box sx={{ mb: 2, display: 'flex' }}>
+      <Box sx={{ display: 'flex' }}>
         <FormControl width={10} sx={{ minWidth: 120 }}>
           <InputLabel id="indicies-label">Indicies</InputLabel>
           <Select
@@ -253,15 +153,18 @@ export default function OptionAnalysis() {
             label="Indicies"
             onChange={handleChange}
           >
-            {['Select', 'NIFTY', 'FINNIFTY', 'BANKNIFTY', 'MIDCPNIFTY'].map(
-              (item, index) => {
-                return (
-                  <MenuItem selected={index === 0} key={index} value={item}>
-                    {item}
-                  </MenuItem>
-                )
-              }
-            )}
+            {indices.map((item, index) => {
+              return (
+                <MenuItem
+                  disabled={index === 0}
+                  selected={index === 0}
+                  key={index}
+                  value={item}
+                >
+                  {item}
+                </MenuItem>
+              )
+            })}
           </Select>
         </FormControl>
 
@@ -323,6 +226,7 @@ export default function OptionAnalysis() {
           flexDirection: 'column',
           borderRadius: '5px',
           bgcolor: 'background.paper',
+          mt: 2,
         }}
       >
         <Box
@@ -342,7 +246,7 @@ export default function OptionAnalysis() {
         <DataGrid
           rows={data}
           rowHeight={25}
-          columns={columns}
+          columns={AnalysisColumns}
           pageSizeOptions={[25]}
           initialState={{ pagination: { paginationModel: { pageSize: 25 } } }}
           // autoPageSize

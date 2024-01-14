@@ -28,11 +28,7 @@ const routes = createBrowserRouter([
       },
       {
         path: '/logout',
-        element: (
-          <h1 style={{ color: 'white', textAlign: 'center' }}>
-            Logging out...
-          </h1>
-        ),
+        element: <h1 style={{ color: 'white', textAlign: 'center' }}>Logging out...</h1>,
       },
     ],
   },
@@ -46,42 +42,30 @@ const routes = createBrowserRouter([
       },
       {
         path: '/dashboard/option-analysis',
-        Component: React.lazy(() =>
-          import('../components/dashboard/OptionAnalysis')
-        ),
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
+        loader: () => ({ url: '/api/option-analysis.json' }),
       },
       {
         path: '/dashboard/future-analysis',
-        Component: React.lazy(() =>
-          import('../components/dashboard/OptionAnalysis')
-        ),
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
+        loader: () => ({ url: '/api/option-analysis.json' }),
       },
       {
         path: '/dashboard/cash-segment-analysis',
-        loader: (data) => {
-          return data
-        },
-        Component: React.lazy(() =>
-          import('../components/dashboard/OptionAnalysis')
-        ),
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
+        loader: () => ({ url: '/api/option-analysis.json' }),
       },
       {
         path: '/dashboard/funds',
-        Component: React.lazy(() =>
-          import('../components/dashboard/ImplementationMessage')
-        ),
+        Component: React.lazy(() => import('../components/Error/ImplementationMessage')),
       },
       {
         path: '/dashboard/recommendation',
-        Component: React.lazy(() =>
-          import('../components/dashboard/ImplementationMessage')
-        ),
+        Component: React.lazy(() => import('../components/Error/ImplementationMessage')),
       },
       {
         path: '/dashboard/virtual-trading',
-        Component: React.lazy(() =>
-          import('../components/dashboard/ImplementationMessage')
-        ),
+        Component: React.lazy(() => import('../components/Error/ImplementationMessage')),
       },
     ],
   },

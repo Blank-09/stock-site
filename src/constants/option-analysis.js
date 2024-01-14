@@ -184,3 +184,11 @@ export const scriptNames = [
   'ZEEL',
   'ZYDUSLIFE',
 ]
+
+export const indices = [
+  'Select',
+  'NIFTY',
+  'FINNIFTY',
+  'BANKNIFTY',
+  'MIDCPNIFTY',
+]
