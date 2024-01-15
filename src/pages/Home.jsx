@@ -20,7 +20,7 @@ import { Paper } from '@mui/material'
 
 const Home = () => {
   return (
-    <>
+    <Box height="100vh">
       <Navbar transparent />
 
       <Box
@@ -96,8 +96,7 @@ const Home = () => {
               <Typography variant="body1" fontSize="18px" maxWidth="sm">
                 Optimize operations with efficient inventory management
                 <br />
-                for businesses and empower individuals to excel in dynamic
-                control.
+                for businesses and empower individuals to excel in dynamic control.
               </Typography>
 
               <Box sx={{ mt: 6 }}>
@@ -131,7 +130,7 @@ const Home = () => {
           </Box>
         </Container>
       </Box>
-    </>
+    </Box>
   )
 }
 

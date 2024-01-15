@@ -2,21 +2,15 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import DashboardRoute from './dashboard'
 
-// MUI
-import Box from '@mui/material/Box'
-
 // Components
 import Home from '../pages/Home'
+import Logout from '../pages/Logout'
 
 //
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <Box height="100vh">
-        <Home />
-      </Box>
-    ),
+    element: <Home />,
     children: [
       {
         path: '/register',
@@ -26,11 +20,11 @@ const routes = createBrowserRouter([
         path: '/login',
         Component: React.lazy(() => import('../pages/Login')),
       },
-      {
-        path: '/logout',
-        element: <h1 style={{ color: 'white', textAlign: 'center' }}>Logging out...</h1>,
-      },
     ],
+  },
+  {
+    path: '/logout',
+    element: <Logout />,
   },
   {
     path: '/dashboard',
@@ -61,7 +55,7 @@ const routes = createBrowserRouter([
       },
       {
         path: '/dashboard/recommendation',
-        Component: React.lazy(() => import('../components/Error/ImplementationMessage')),
+        Component: React.lazy(() => import('../pages/Recommendation')),
       },
       {
         path: '/dashboard/virtual-trading',

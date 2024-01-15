@@ -5,6 +5,52 @@ import Typography from '@mui/material/Typography'
 
 // Components
 import DashboardCard from '../components/dashboard/DashboardCard'
+import { Grid } from '@mui/material'
+
+const dashboardData = [
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+  {
+    name: 'NIFTY',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
+    stockPrice: '21,513.00',
+    stockPriceChange: '-197.80',
+    stockPriceChangePercent: '-0.91',
+  },
+]
 
 const Dashboard = () => {
   return (
@@ -44,68 +90,22 @@ const Dashboard = () => {
           <Typography component="span" fontWeight="bold">
             Market:{' '}
           </Typography>
-          <Typography component="span">Open </Typography>
+          <Typography component="span">Open</Typography>
         </div>
       </Box>
 
-      <Box
-        sx={{
-          width: '100%',
-          display: 'flex',
-          gap: 2,
-          mt: 2,
-        }}
-      >
-        <DashboardCard
-          img={{
-            alt: 'NIFTY',
-            src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
-          }}
-          stockPrice="21,513.00"
-          stockPriceChange="-197.80"
-          stockPriceChangePercent="-0.91"
-          lastUpdated="08-Jan-2024 15:30"
-        />
-        <DashboardCard
-          img={{
-            alt: 'NIFTY',
-            src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
-          }}
-          stockPrice="21,513.00"
-          stockPriceChange="-197.80"
-          stockPriceChangePercent="-0.91"
-          lastUpdated="08-Jan-2024 15:30"
-        />
-      </Box>
-      <Box
-        sx={{
-          width: '100%',
-          display: 'flex',
-          gap: 2,
-          mt: 'auto',
-        }}
-      >
-        <DashboardCard
-          img={{
-            alt: 'NIFTY',
-            src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
-          }}
-          stockPrice="21,513.00"
-          stockPriceChange="197.80"
-          stockPriceChangePercent="0.91"
-          lastUpdated="08-Jan-2024 15:30"
-        />
-        <DashboardCard
-          img={{
-            alt: 'NIFTY',
-            src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
-          }}
-          stockPrice="21,513.00"
-          stockPriceChange="-197.80"
-          stockPriceChangePercent="-0.91"
-          lastUpdated="08-Jan-2024 15:30"
-        />
-      </Box>
+      <Grid container spacing={2} sx={{ mt: 2 }}>
+        {dashboardData.map((data, index) => (
+          <Grid key={index} item xs={12} sm={6} lg={4}>
+            <DashboardCard
+              img={{ src: data.img, alt: data.name }}
+              stockPrice={data.stockPrice}
+              stockPriceChange={data.stockPriceChange}
+              stockPriceChangePercent={data.stockPriceChangePercent}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </Container>
   )
 }

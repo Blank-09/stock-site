@@ -26,6 +26,7 @@ export const AnalysisColumns = [
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
+
   {
     field: 'Interpretation',
     headerName: 'Interpretation',

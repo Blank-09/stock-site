@@ -36,11 +36,26 @@ export default function Register() {
     event.preventDefault()
 
     const data = new FormData(event.currentTarget)
-    const body = {
-      firstName: data.get('firstName'),
-      lastName: data.get('lastName'),
-      email: data.get('email'),
-      password: data.get('password'),
+    const body = {}
+
+    for (let [key, value] of data.entries()) {
+      body[key] = value
+    }
+
+    /*
+      body = {
+        "userid": "abc",
+        "email": "abc@gmail.com",
+        "phoneno": "1234567890",
+        "password": "alsdkf",
+        "confirm-password": "alkfj",
+        "terms": "terms"
+      }
+    */
+
+    if (body.password !== body['confirm-password']) {
+      setMessage('Passwords do not match')
+      return
     }
 
     console.log(body)
@@ -81,46 +96,13 @@ export default function Register() {
                 src=""
               /> */}
             </Avatar>
-            <Box
-              component="form"
-              // noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 3 }}
-            >
+            <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
               <Typography variant="subtitle2" color={'red'} paddingY={3}>
                 {message}
               </Typography>
               <Grid container spacing={2}>
-                {/* <Grid item xs={12} sm={6}>
-                  <TextField
-                    autoComplete="given-name"
-                    name="firstName"
-                    required
-                    fullWidth
-                    id="firstName"
-                    label="First Name"
-                    autoFocus
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="lastName"
-                    label="Last Name"
-                    name="lastName"
-                    autoComplete="family-name"
-                  />
-                </Grid> */}
                 <Grid item xs={12}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="userid"
-                    label="User Id"
-                    name="userid"
-                    autoComplete="userid"
-                  />
+                  <TextField required fullWidth id="userid" label="User Id" name="userid" autoComplete="userid" />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
@@ -155,15 +137,8 @@ export default function Register() {
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">
-                          <IconButton
-                            onClick={() => setVisible((prev) => !prev)}
-                            edge="end"
-                          >
-                            {visible ? (
-                              <VisibilityIcon />
-                            ) : (
-                              <VisibilityOffIcon />
-                            )}
+                          <IconButton onClick={() => setVisible((prev) => !prev)} edge="end">
+                            {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
                           </IconButton>
                         </InputAdornment>
                       ),
@@ -181,15 +156,8 @@ export default function Register() {
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">
-                          <IconButton
-                            onClick={() => setVisible((prev) => !prev)}
-                            edge="end"
-                          >
-                            {visible ? (
-                              <VisibilityIcon />
-                            ) : (
-                              <VisibilityOffIcon />
-                            )}
+                          <IconButton onClick={() => setVisible((prev) => !prev)} edge="end">
+                            {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
                           </IconButton>
                         </InputAdornment>
                       ),
@@ -198,18 +166,13 @@ export default function Register() {
                 </Grid>
                 <Grid item xs={12}>
                   <FormControlLabel
-                    control={<Checkbox value="remember" color="primary" />}
+                    name="terms"
+                    control={<Checkbox value="terms" color="primary" />}
                     label="Agree our terms and conditions"
                   />
                 </Grid>
               </Grid>
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                size="large"
-                sx={{ mt: 3, mb: 2 }}
-              >
+              <Button type="submit" fullWidth variant="contained" size="large" sx={{ mt: 3, mb: 2 }}>
                 Register
               </Button>
               <Grid container justifyContent="flex-end">

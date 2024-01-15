@@ -14,7 +14,7 @@ const DashboardRoute = () => {
   const navigator = useNavigate()
 
   useEffect(() => {
-    if (window.location.pathname === '/dashboard') {
+    if (window.location.pathname.match(/^\/dashboard\/?$/)) {
       navigator('/dashboard/home')
     }
   }, [navigator])
@@ -28,9 +28,7 @@ const DashboardRoute = () => {
           width: '100%',
           minHeight: '100vh',
           backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[100]
-              : theme.palette.grey[900],
+            theme.palette.mode === 'light' ? theme.palette.grey[100] : theme.palette.grey[900],
           position: 'relative',
           overflow: 'auto',
         }}

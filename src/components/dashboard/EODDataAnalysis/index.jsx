@@ -23,8 +23,6 @@ import { combineRows } from '../../../utils/analysis'
 export default function OptionAnalysis() {
   const loaderData = useLoaderData()
 
-  console.log(loaderData)
-
   const [rows, setRows] = useState([])
   const [expiryDates, setExpiryDates] = useState(['Select'])
   const [searchParams, setSearchParams] = useSearchParams()
@@ -59,9 +57,7 @@ export default function OptionAnalysis() {
     const set = new Set()
     filteredRows.forEach((row) => set.add(row.Expiry))
 
-    const expiryDates = ['Select', ...set].sort(
-      (a, b) => new Date(a) - new Date(b)
-    )
+    const expiryDates = ['Select', ...set].sort((a, b) => new Date(a) - new Date(b))
     setExpiryDates(expiryDates)
 
     return filteredRows.filter((row) => {
@@ -155,12 +151,7 @@ export default function OptionAnalysis() {
           >
             {indices.map((item, index) => {
               return (
-                <MenuItem
-                  disabled={index === 0}
-                  selected={index === 0}
-                  key={index}
-                  value={item}
-                >
+                <MenuItem disabled={index === 0} selected={index === 0} key={index} value={item}>
                   {item}
                 </MenuItem>
               )
@@ -185,12 +176,7 @@ export default function OptionAnalysis() {
           >
             {scriptNames.map((item, index) => {
               return (
-                <MenuItem
-                  selected={index === 0}
-                  disabled={index === 0}
-                  key={index}
-                  value={item}
-                >
+                <MenuItem selected={index === 0} disabled={index === 0} key={index} value={item}>
                   {item}
                 </MenuItem>
               )

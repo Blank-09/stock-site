@@ -35,11 +35,13 @@ export default function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
-
-    console.log({
-      email: data.get('email'),
+    const credentials = {
+      userid: data.get('userid'),
       password: data.get('password'),
-    })
+    }
+
+    console.log(credentials)
+    sessionStorage.setItem('login', JSON.stringify(credentials))
 
     toast.success('Logged in successfully')
     navigate('/dashboard')
@@ -84,25 +86,13 @@ export default function Login() {
                 src=""
               /> */}
             </Avatar>
-            <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 3 }}
-            >
+            <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
               <Typography variant="subtitle2" color="red" paddingY={3}>
                 {message}
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="userid"
-                    label="User Id"
-                    name="userid"
-                    autoComplete="userid"
-                  />
+                  <TextField required fullWidth id="userid" label="User Id" name="userid" autoComplete="userid" />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
@@ -116,15 +106,8 @@ export default function Login() {
                     InputProps={{
                       endAdornment: (
                         <InputAdornment position="end">
-                          <IconButton
-                            onClick={() => setVisible((prev) => !prev)}
-                            edge="end"
-                          >
-                            {visible ? (
-                              <VisibilityIcon />
-                            ) : (
-                              <VisibilityOffIcon />
-                            )}
+                          <IconButton onClick={() => setVisible((prev) => !prev)} edge="end">
+                            {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
                           </IconButton>
                         </InputAdornment>
                       ),
@@ -133,27 +116,17 @@ export default function Login() {
                 </Grid>
                 <Grid item xs={12}>
                   <FormControlLabel
-                    control={<Checkbox value="remember" color="primary" />}
-                    label="Remember me"
+                    control={<Checkbox value="terms" color="primary" />}
+                    label="Agree our terms and conditions"
                   />
                 </Grid>
               </Grid>
-              <Button
-                fullWidth
-                sx={{ mt: 3, mb: 2 }}
-                type="submit"
-                variant="contained"
-                size="large"
-              >
+              <Button fullWidth sx={{ mt: 3, mb: 2 }} type="submit" variant="contained" size="large">
                 Login
               </Button>
               <Grid container justifyContent="flex-end" spacing={2}>
                 <Grid item>
-                  <LinkMUI
-                    component={Link}
-                    to={'/forgot-password'}
-                    variant="body2"
-                  >
+                  <LinkMUI component={Link} to={'/forgot-password'} variant="body2">
                     Forgot Password?
                   </LinkMUI>
                 </Grid>

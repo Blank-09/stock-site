@@ -3,6 +3,7 @@ import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked'
 import AssessmentIcon from '@mui/icons-material/Assessment'
 import StarIcon from '@mui/icons-material/Star'
 import { TbMoneybag } from 'react-icons/tb'
+import ShowChartIcon from '@mui/icons-material/ShowChart'
 
 export const sidebarItems = [
   {
@@ -43,7 +44,7 @@ export const sidebarItems = [
   },
   {
     href: '/dashboard/virtual-trading',
-    icon: StarIcon,
+    icon: ShowChartIcon,
     label: 'Virtual Trading',
   },
 ]

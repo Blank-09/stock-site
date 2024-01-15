@@ -1,22 +1,10 @@
 // MUI
 import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
 import InputLabel from '@mui/material/InputLabel'
 import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
 import { DataGrid } from '@mui/x-data-grid'
-
-// MUI Icons
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
-import RemoveIcon from '@mui/icons-material/Remove'
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord'
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown'
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
-
 
 import { useEffect, useState } from 'react'
 import axios from 'axios'
@@ -44,10 +32,10 @@ const columns = [
     width: 200,
     sortable: false,
     renderCell: (params) => {
-      const ltp = parseFloat(params.row.LTP);
-      const price = parseFloat(params.row.Price);
-      const difference = ltp - price;
-      const percentageChange = ((difference / price) * 100).toFixed(2);
+      const ltp = parseFloat(params.row.LTP)
+      const price = parseFloat(params.row.Price)
+      const difference = ltp - price
+      const percentageChange = ((difference / price) * 100).toFixed(2)
 
       return (
         <div>
@@ -55,7 +43,7 @@ const columns = [
             {difference.toFixed(2)} ({percentageChange}%)
           </div>
         </div>
-      );
+      )
     },
   },
   { field: 'StopLoss', headerName: 'StopLoss', width: 150, sortable: false },
@@ -149,15 +137,10 @@ export default function Recommendation() {
       })
       setRows(res.data)
     })
-
-    
   }, [])
 
   return (
-    <Box
-      style={{ width: '100%', height: '100%', background: '#f5f5f5' }}
-      sx={{ flexGrow: 1, p: 3 }}
-    >
+    <Box style={{ width: '100%', height: '100%', background: '#f5f5f5' }} sx={{ flexGrow: 1, p: 3 }}>
       <Box sx={{ mb: 2 }}>
         <FormControl width={10} sx={{ minWidth: 120 }}>
           <InputLabel id="indicies-label">Indicies</InputLabel>
@@ -170,15 +153,13 @@ export default function Recommendation() {
             label="Indicies"
             onChange={handleChange}
           >
-            {['Select', 'NIFTY', 'FINNIFTY', 'BANKNIFTY', 'MIDCPNIFTY'].map(
-              (item, index) => {
-                return (
-                  <MenuItem key={index} value={item}>
-                    {item}
-                  </MenuItem>
-                )
-              }
-            )}
+            {['Select', 'NIFTY', 'FINNIFTY', 'BANKNIFTY', 'MIDCPNIFTY'].map((item, index) => {
+              return (
+                <MenuItem key={index} value={item}>
+                  {item}
+                </MenuItem>
+              )
+            })}
           </Select>
         </FormControl>
 
