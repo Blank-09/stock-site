@@ -21,6 +21,11 @@ export const sidebarItems = [
     label: 'EOD Data Analysis',
     children: [
       {
+        href: '/dashboard/oi-range',
+        icon: RadioButtonUncheckedIcon,
+        label: 'OI Range',
+      },
+      {
         href: '/dashboard/option-analysis',
         icon: RadioButtonUncheckedIcon,
         label: 'Option Analysis',

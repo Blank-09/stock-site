@@ -146,7 +146,7 @@ export default function SideBar() {
             <MenuIcon />
           </IconButton>
           {!open && (
-            <Typography variant="h6" noWrap component="div">
+            <Typography variant="h6" textAlign="center" noWrap>
               {company.name}
             </Typography>
           )}
@@ -189,16 +189,12 @@ export default function SideBar() {
       <Drawer variant="permanent" open={open}>
         <DrawerHeader sx={{ bgcolor: 'primary.main', color: 'white' }}>
           {open && (
-            <Typography sx={{ mr: 'auto' }} variant="h6" noWrap component="div">
+            <Typography sx={{ mx: 'auto' }} variant="h6" noWrap component="div">
               {company.name}
             </Typography>
           )}
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? (
-              <ChevronRightIcon />
-            ) : (
-              <ChevronLeftIcon />
-            )}
+            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
@@ -215,20 +211,12 @@ export default function SideBar() {
                   <ListItemIcon sx={{ color: 'primary.main' }}>
                     <item.icon size="24" />
                   </ListItemIcon>
-                  <Typography sx={{ fontWeight: '500', mr: 'auto' }}>
-                    {item.label}
-                  </Typography>
+                  <Typography sx={{ fontWeight: '500', mr: 'auto' }}>{item.label}</Typography>
                   {/* <ListItemText
                     sx={{ fontWeight: 'bold' }}
                     primary={item.label}
                   /> */}
-                  {item.children ? (
-                    collapseOpen[index] ? (
-                      <ExpandLess />
-                    ) : (
-                      <ExpandMore />
-                    )
-                  ) : null}
+                  {item.children ? collapseOpen[index] ? <ExpandLess /> : <ExpandMore /> : null}
                 </ListItemButton>
               </ListItem>
               {item.children && (
@@ -237,9 +225,7 @@ export default function SideBar() {
                     {item.children.map((child) => (
                       <ListItem key={child.label}>
                         <ListItemButton LinkComponent={NavLink} to={child.href}>
-                          <ListItemIcon
-                            sx={{ color: 'primary.main', minWidth: '40px' }}
-                          >
+                          <ListItemIcon sx={{ color: 'primary.main', minWidth: '40px' }}>
                             <child.icon sx={{ fontSize: '16px' }} />
                           </ListItemIcon>
                           <ListItemText primary={child.label} />

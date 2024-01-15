@@ -35,6 +35,11 @@ const routes = createBrowserRouter([
         Component: React.lazy(() => import('../pages/Dashboard')),
       },
       {
+        path: '/dashboard/oi-range',
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
+        loader: () => ({ url: '/api/option-analysis.json' }),
+      },
+      {
         path: '/dashboard/option-analysis',
         Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
         loader: () => ({ url: '/api/option-analysis.json' }),

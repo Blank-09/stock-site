@@ -1,32 +1,35 @@
 [
-    {
-        "Script": "TCS",
-        "Recommanded Date": "10-Aug-2023",
-        "Price": "3400",
-        "LTP": "3750",
-        "Buy/Sell": "Buy",
-        "Change": " ",
-        "Status": "Active",
-        "Comment": "Short term"
-    },
-    {
-        "Script": "Marico",
-        "Recommanded Date": "10-Aug-2023",
-        "Price": "530",
-        "LTP": "546.5",
-        "Buy/Sell": "Buy",
-        "Change": "",
-        "Status": "Active",
-        "Comment": "Short term"
-    },
-    {
-        "Script": "TCS",
-        "Recommanded Date": "10-Aug-2023",
-        "Price": "3400",
-        "LTP": "3750",
-        "Buy/Sell": "Buy",
-        "Change": "",
-        "Status": "Target Achieved",
-        "Comment": "Long Term"
-    }
+  {
+    "Script": "TCS",
+    "Recommanded Date": "10-Aug-2023",
+    "Price": "3400",
+    "LTP": "3750",
+    "Buy/Sell": "Buy",
+    "Change": "",
+    "Status": "Active",
+    "View": "Short term",
+    "Comment": ""
+  },
+  {
+    "Script": "Marico",
+    "Recommanded Date": "10-Aug-2023",
+    "Price": "530",
+    "LTP": "546.5",
+    "Buy/Sell": "Buy",
+    "Change": "",
+    "Status": "Active",
+    "View": "Short term",
+    "Comment": ""
+  },
+  {
+    "Script": "TCS",
+    "Recommanded Date": "10-Aug-2023",
+    "Price": "3400",
+    "LTP": "3200",
+    "Buy/Sell": "Buy",
+    "Change": "",
+    "Status": "Target Achieved",
+    "View": "Long Term",
+    "Comment": ""
+  }
 ]

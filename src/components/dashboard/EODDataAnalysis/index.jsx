@@ -71,6 +71,7 @@ export default function OptionAnalysis() {
     })
   }, [rows, searchParams])
 
+  // Updates expiry date when indices or script name is changed
   useEffect(() => {
     if (expiryDates.length > 1) {
       handleSearchParamChange('expiryDate', expiryDates[1])
@@ -80,19 +81,24 @@ export default function OptionAnalysis() {
   const handleChange = (event) => {
     const { name, value } = event.target
 
+    // Logic to output either indices or script name
     setSearchParams((prev) => {
       let newParams = new URLSearchParams(prev)
 
       if (name === 'indices' || name === 'scriptName') {
         newParams.delete('indices')
         newParams.delete('scriptName')
-        newParams.set('expiryDate', 'Select')
+
+        // Since expiry date is dependent on indices or script name
+        newParams.set('expiryDate', 'Select') // expiryDates[0]
       }
 
+      // If nothing is selected
       if (!prev.get('indices') && !prev.get('scriptName')) {
         newParams.set('indices', 'NIFTY')
       }
 
+      // Finally, update search params (from input - handleChange)
       newParams.set(name, value)
 
       return newParams
@@ -101,32 +107,27 @@ export default function OptionAnalysis() {
 
   useEffect(() => {
     axios.get(loaderData.url).then((res) => {
+      /**
+       * HACK: I've combined the rows with same strike price
+       * But, If the json data is already combined, then this is not required
+       *
+       * You can find the schema in `/src/types/analysis.ts` - **CombinedOptionAnalysisData**
+       *
+       * If the json data is already combined, then use the following code
+       * instead of the below two lines
+       * ```js
+       * setRows(res.data)
+       * ```
+       *
+       * @type { CombinedOptionAnalysisData[] }
+       *
+       */
       const combinedRows = combineRows(res.data)
-
-      const set = new Set()
-      combinedRows.forEach((row) => {
-        set.add(row.Expiry)
-      })
-
-      const expiryDates = [...set].sort((a, b) => new Date(a) - new Date(b))
-      let obj = {}
-
-      if (!searchParams.get('expiryDate')) {
-        searchParams.forEach((value, key) => {
-          obj[key] = value
-        })
-
-        obj = {
-          ...obj,
-          expiryDate: expiryDates[0],
-        }
-      }
-
-      setExpiryDates(expiryDates)
       setRows(combinedRows)
 
-      if (searchParams.size === 0) {
-        setSearchParams({ ...obj, indices: 'NIFTY' })
+      // Setting default search params (if not provided)
+      if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
+        setSearchParams({ indices: 'NIFTY' })
       }
     })
   }, [])

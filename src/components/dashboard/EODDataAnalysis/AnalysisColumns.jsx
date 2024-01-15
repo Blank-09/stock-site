@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import AnalysisChip from '../../ui/AnalysisChip'
 
 // Others
-import { getInterpretation, getTrend } from '../../../utils/analysis'
+import { getCallInterpretation, getCallTrend, getPutInterpretation, getPutTrend } from '../../../utils/analysis'
 
 const trendWidth = 100
 const interpretationWidth = 150
@@ -21,7 +21,7 @@ export const AnalysisColumns = [
     width: trendWidth,
     renderCell: (params) => {
       const value = params.row.CE?.Trend
-      const { Icon, chipColor } = getTrend(value)
+      const { Icon, chipColor } = getCallTrend(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
@@ -33,7 +33,7 @@ export const AnalysisColumns = [
     width: interpretationWidth,
     renderCell: (params) => {
       const value = params.row.CE?.Interpretation
-      const { Icon, chipColor } = getInterpretation(value)
+      const { Icon, chipColor } = getCallInterpretation(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
@@ -101,7 +101,7 @@ export const AnalysisColumns = [
     width: interpretationWidth,
     renderCell: (params) => {
       const value = params.row.PE?.Interpretation
-      const { Icon, chipColor } = getInterpretation(value)
+      const { Icon, chipColor } = getPutInterpretation(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
@@ -112,7 +112,7 @@ export const AnalysisColumns = [
     width: trendWidth,
     renderCell: (params) => {
       const value = params.row.PE?.Trend
-      const { Icon, chipColor } = getTrend(value)
+      const { Icon, chipColor } = getPutTrend(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },

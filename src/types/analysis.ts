@@ -1,11 +1,7 @@
 export type TrendType = 'Bullish' | 'Neutral' | 'Bearish'
-export type InterpretationType =
-  | 'Short builtup'
-  | 'Short Covering'
-  | 'Long buildup'
-  | 'Long Unwinding'
+export type InterpretationType = 'Short builtup' | 'Short Covering' | 'Long buildup' | 'Long Unwinding'
 
-export type OptionAnalysisData = Array<{
+export interface OptionAnalysisData {
   Symbol: string
   Expiry: string
   Strike: string
@@ -15,16 +11,16 @@ export type OptionAnalysisData = Array<{
   OI: string
   Trend: TrendType
   Interpretation: InterpretationType
-}>
+}
 
-export type CombinedOptionAnalysisData = Array<{
+export interface CombinedOptionAnalysisData {
   id: number
   Symbol: string
   Strike: string
   Expiry: string
   CE: Options
   PE: Options
-}>
+}
 
 interface Options {
   OptionType: string

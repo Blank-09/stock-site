@@ -117,8 +117,16 @@ const columns = [
       )
     },
   },
-  { field: 'Comment', headerName: 'Comment', width: 150, sortable: false },
-]
+  { field: 'View', headerName: 'View', width: 150, sortable: false },
+].map((column, index) => ({
+  ...column,
+  headerAlign: 'center',
+  align: 'center',
+  sortable: false,
+  cellClassName: index && 'borderCell',
+}))
+
+// ... (existing imports)
 
 export default function Recommendation() {
   const [rows, setRows] = useState([])
@@ -160,9 +168,17 @@ export default function Recommendation() {
     const selectedRow = rows.find((row) => row.id === params.id)
 
     setTooltipContent(selectedRow)
+
+    // Adjust the left position to be relative to the DataGrid
+    const dataGridRect = document.querySelector('.MuiDataGrid-root').getBoundingClientRect()
+    const tooltipLeft = event.pageX - dataGridRect.left
+
+    // Adjust the top position to be near the selected row
+    const tooltipTop = dataGridRect.top + params.rowIndex * 32 // assuming 32 is the row height
+
     setTooltipPosition({
-      top: event.screenY,
-      left: event.screenX,
+      top: tooltipTop,
+      left: tooltipLeft,
     })
   }
 
@@ -171,7 +187,21 @@ export default function Recommendation() {
   }
 
   const generateJsonData = () => {
-    // ... (existing code)
+    // Generate JSON data based on form inputs
+    const jsonData = {
+      script: recommendationForm.script,
+      price: recommendationForm.price,
+      buySell: recommendationForm.buySell,
+      view: recommendationForm.view,
+      comment: recommendationForm.comment,
+    }
+
+    // Save the JSON data to a file (you can customize this part based on your needs)
+    // const blob = new Blob([JSON.stringify(jsonData)], { type: 'application/json' })
+    // const link = document.createElement('a')
+    // link.href = URL.createObjectURL(blob)
+    // link.download = 'recommendation.json'
+    // link.click()
   }
 
   useEffect(() => {
@@ -193,26 +223,35 @@ export default function Recommendation() {
       style={{ width: '100%', height: '100%' }}
       sx={{ flexGrow: 1, p: 3, maxWidth: '1320px!important' }}
     >
-      {/* ... (existing code) */}
-
-      <Tooltip
-        open={!!tooltipContent}
-        onClose={handleTooltipClose}
-        title={
-          tooltipContent ? (
-            <div>
-              {Object.keys(tooltipContent).map((key) => (
-                <div key={key}>
-                  {key}: {tooltipContent[key]}
+      <style>{styles}</style>
+      <Box sx={{ display: 'flex', gap: 2, mt: 2, justifyContent: 'flex-end', position: 'relative' }}>
+        {tooltipContent && (
+          <Tooltip
+            open={!!tooltipContent}
+            onClose={handleTooltipClose}
+            title={
+              tooltipContent ? (
+                <div>
+                  {Object.keys(tooltipContent).map((key) => (
+                    <div key={key}>
+                      {key}: {tooltipContent[key]}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          ) : (
-            ''
-          )
-        }
-        style={{ top: tooltipPosition.top, left: tooltipPosition.left, position: 'absolute' }}
-      ></Tooltip>
+              ) : (
+                ''
+              )
+            }
+            style={{ top: tooltipPosition.top, left: tooltipPosition.left, position: 'absolute', zIndex: 1 }}
+          ></Tooltip>
+        )}
+
+        <Tooltip title="Recommend" arrow>
+          <Button size="small" variant="contained" color="primary" onClick={handleRecommend}>
+            Recommend
+          </Button>
+        </Tooltip>
+      </Box>
 
       <Box
         sx={{
@@ -228,7 +267,7 @@ export default function Recommendation() {
           rowHeight={25}
           columns={columns}
           pageSizeOptions={[25]}
-          onRowClick={handleRowClick} // Attach row click event handler
+          onRowClick={handleRowClick}
           initialState={{
             pagination: { paginationModel: { pageSize: 25 } },
           }}
@@ -242,8 +281,8 @@ export default function Recommendation() {
         maxWidth="lg"
         sx={{
           '& .MuiDialog-paper': {
-            width: '50%',
-            maxHeight: '50%',
+            width: '70%',
+            maxHeight: '70%',
           },
         }}
       >
@@ -309,23 +348,6 @@ export default function Recommendation() {
                   <MenuItem value="Option2">Long-Term</MenuItem>
                 </TextField>
               </FormControl>
-
-              <FormControl fullWidth sx={{ width: 200 }}>
-                <TextField
-                  id="status"
-                  label="Status"
-                  margin="normal"
-                  variant="outlined"
-                  select
-                  value={recommendationForm.view}
-                  onChange={(e) => setRecommendationForm({ ...recommendationForm, view: e.target.value })}
-                >
-                  <MenuItem value="Option1">Target achieved</MenuItem>
-                  <MenuItem value="Option2">Active</MenuItem>
-                  <MenuItem value="Option3">SL-hit</MenuItem>
-                  <MenuItem value="Option4">Invalid</MenuItem>
-                </TextField>
-              </FormControl>
             </Box>
 
             <TextField
@@ -344,7 +366,7 @@ export default function Recommendation() {
                 variant="contained"
                 color="primary"
                 onClick={() => {
-                  handleRecommendSubmit()
+                  handleCloseRecommendDialog()
                   generateJsonData()
                 }}
               >
