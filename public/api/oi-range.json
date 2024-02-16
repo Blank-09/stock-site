@@ -1,0 +1,23 @@
+[
+	{
+    "Strike": "1800",
+    "Type": "CE",
+    "LTP": "176.00",
+    "Open-Interest": "29400",
+    "OI-Change": "3900",
+    "OI-Value": "51,74,400",
+    "OI-Change-Value": "6,86,400",
+    "Range": "1,976"
+  },
+  {
+    "Strike": "1840",
+    "Type": "PE",
+    "LTP": "7.05",
+    "Open-Interest": "14400",
+    "OI-Change": "-18000",
+    "OI-Value": "35,50,400",
+    "OI-Change-Value": "93,600",
+    "Range": "1792.95"
+  }
+ ]
+  

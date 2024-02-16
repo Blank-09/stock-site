@@ -112,19 +112,19 @@ export function getPutInterpretation(value) {
 
   switch (value) {
     case 'Short builtup':
-      chipColor = 'lightGreen'
+      chipColor = 'success'
       Icon = KeyboardDoubleArrowDownIcon
       break
     case 'Short Covering':
-      chipColor = 'lightRed'
+      chipColor = 'error'
       Icon = KeyboardDoubleArrowUpIcon
       break
     case 'Long buildup':
-      chipColor = 'error'
+      chipColor = 'lightRed'
       Icon = KeyboardArrowUpIcon
       break
     case 'Long Unwinding':
-      chipColor = 'success'
+      chipColor = 'lightGreen'
       Icon = KeyboardArrowDownIcon
       break
     default:
@@ -132,30 +132,4 @@ export function getPutInterpretation(value) {
   }
 
   return { chipColor, Icon }
-}
-
-/**
- * Combine the rows with same strike and symbol
- * @param {import('../types/analysis').OptionAnalysisData[]} data
- * @returns {import('../types/analysis').CombinedOptionAnalysisData[]}
- */
-
-export function combineRows(data) {
-  return data.reduce((acc, row) => {
-    const existingRow = acc.find((r) => r.Strike === row.Strike && r.Symbol === row.Symbol)
-
-    if (existingRow) {
-      existingRow[row.OptionType] = row
-    } else {
-      acc.push({
-        id: acc.length + 1,
-        Symbol: row.Symbol,
-        Strike: row.Strike,
-        Expiry: row.Expiry,
-        [row.OptionType]: row,
-      })
-    }
-
-    return acc
-  }, [])
 }

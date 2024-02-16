@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 // MUI
 import Avatar from '@mui/material/Avatar'
-import Button from '@mui/material/Button'
-import TextField from '@mui/material/TextField'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import Checkbox from '@mui/material/Checkbox'
-import LinkMUI from '@mui/material/Link'
-import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import Checkbox from '@mui/material/Checkbox'
+import CircularProgress from '@mui/material/CircularProgress'
 import Container from '@mui/material/Container'
-import Paper from '@mui/material/Paper'
-import InputAdornment from '@mui/material/InputAdornment'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
+import InputAdornment from '@mui/material/InputAdornment'
+import LinkMUI from '@mui/material/Link'
+import Paper from '@mui/material/Paper'
+import TextField from '@mui/material/TextField'
+import Typography from '@mui/material/Typography'
 
 // Icons
 import VisibilityIcon from '@mui/icons-material/Visibility'
@@ -25,26 +26,34 @@ import Copyright from '../components/Copyright'
 // Others
 import { useNavigate, Link } from 'react-router-dom'
 import { toast } from 'sonner'
+import { login } from '../utils/api'
 
 export default function Login() {
   const navigate = useNavigate()
 
   const [message, setMessage] = useState('')
   const [visible, setVisible] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleSubmit = async (event) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     const credentials = {
-      userid: data.get('userid'),
+      username: data.get('username'),
       password: data.get('password'),
     }
 
-    console.log(credentials)
-    sessionStorage.setItem('login', JSON.stringify(credentials))
-
-    toast.success('Logged in successfully')
-    navigate('/dashboard')
+    try {
+      setLoading(true)
+      await login(credentials.username, credentials.password)
+      toast.success('Logged in successfully')
+      navigate('/dashboard')
+    } catch (e) {
+      toast.error("Couldn't log in")
+      setMessage(e.message)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -92,7 +101,7 @@ export default function Login() {
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
-                  <TextField required fullWidth id="userid" label="User Id" name="userid" autoComplete="userid" />
+                  <TextField required fullWidth id="username" label="User Id" name="username" autoComplete="username" />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
@@ -116,13 +125,14 @@ export default function Login() {
                 </Grid>
                 <Grid item xs={12}>
                   <FormControlLabel
+                    required
                     control={<Checkbox value="terms" color="primary" />}
                     label="Agree our terms and conditions"
                   />
                 </Grid>
               </Grid>
-              <Button fullWidth sx={{ mt: 3, mb: 2 }} type="submit" variant="contained" size="large">
-                Login
+              <Button fullWidth sx={{ mt: 3, mb: 2 }} type="submit" variant="contained" size="large" disabled={loading}>
+                {loading ? <CircularProgress size={24} sx={{ mr: 2 }} /> : 'Login'}
               </Button>
               <Grid container justifyContent="flex-end" spacing={2}>
                 <Grid item>

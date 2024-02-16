@@ -16,11 +16,11 @@ const strikeWidth = 150
 
 export const AnalysisColumns = [
   {
-    field: 'Trend',
+    field: 'CETrend',
     headerName: 'Trend',
     width: trendWidth,
     renderCell: (params) => {
-      const value = params.row.CE?.Trend
+      const value = params.value
       const { Icon, chipColor } = getCallTrend(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
@@ -28,11 +28,11 @@ export const AnalysisColumns = [
   },
 
   {
-    field: 'Interpretation',
+    field: 'CEInterpretation',
     headerName: 'Interpretation',
     width: interpretationWidth,
     renderCell: (params) => {
-      const value = params.row.CE?.Interpretation
+      const value = params.value
       const { Icon, chipColor } = getCallInterpretation(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
@@ -40,21 +40,18 @@ export const AnalysisColumns = [
   },
 
   {
-    field: 'OI',
+    field: 'CEOI',
     headerName: 'OI',
-    valueGetter: (params) => params.row.CE?.OI,
     width: oiWidth,
   },
   {
-    field: 'OIChange',
+    field: 'CEOIChange',
     headerName: 'OI Change',
-    valueGetter: (params) => params.row.CE?.OIChange,
     width: oiChangeWidth,
   },
   {
-    field: 'ClosePrice',
+    field: 'CEClosePrice',
     headerName: 'Close Price',
-    valueGetter: (params) => params.row.CE?.ClosePrice,
     width: closePriceWidth,
   },
   {
@@ -78,40 +75,37 @@ export const AnalysisColumns = [
     },
   },
   {
-    field: 'ClosePrice2',
+    field: 'PEClosePrice',
     headerName: 'Close Price',
-    valueGetter: (params) => params.row.PE?.ClosePrice,
     width: closePriceWidth,
   },
   {
-    field: 'OIChange2',
+    field: 'PEOIChange',
     headerName: 'OI Change',
-    valueGetter: (params) => params.row.PE?.OIChange,
     width: oiChangeWidth,
   },
   {
-    field: 'OI2',
+    field: 'PEOI',
     headerName: 'OI',
-    valueGetter: (params) => params.row.PE?.OI,
     width: oiWidth,
   },
   {
-    field: 'Interpretation2',
+    field: 'PEInterpretation',
     headerName: 'Interpretation',
     width: interpretationWidth,
     renderCell: (params) => {
-      const value = params.row.PE?.Interpretation
+      const value = params.value
       const { Icon, chipColor } = getPutInterpretation(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />
     },
   },
   {
-    field: 'Trend2',
+    field: 'PETrend',
     headerName: 'Trend',
     width: trendWidth,
     renderCell: (params) => {
-      const value = params.row.PE?.Trend
+      const value = params.value
       const { Icon, chipColor } = getPutTrend(value)
 
       return <AnalysisChip label={value} color={chipColor} icon={<Icon />} />

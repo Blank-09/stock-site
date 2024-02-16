@@ -1,0 +1,5078 @@
+[
+  {
+    "Script": "BANKNIFTY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "44771.45",
+    "OI": "1879020",
+    "OIChange": "205155",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANKNIFTY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "45012.75",
+    "OI": "276330",
+    "OIChange": "-6960",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANKNIFTY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "45237.7",
+    "OI": "51165",
+    "OIChange": "75",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FINNIFTY",
+    "Expiry": "29-Aug-2023",
+    "ClosePrice": "20013.7",
+    "OI": "80760",
+    "OIChange": "5240",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FINNIFTY",
+    "Expiry": "26-Sep-2023",
+    "ClosePrice": "20060.6",
+    "OI": "1720",
+    "OIChange": "-200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FINNIFTY",
+    "Expiry": "31-Oct-2023",
+    "ClosePrice": "20712.55",
+    "OI": "40",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MIDCPNIFTY",
+    "Expiry": "30-Aug-2023",
+    "ClosePrice": "8604.2",
+    "OI": "78825",
+    "OIChange": "825",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MIDCPNIFTY",
+    "Expiry": "27-Sep-2023",
+    "ClosePrice": "8607.95",
+    "OI": "600",
+    "OIChange": "75",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MIDCPNIFTY",
+    "Expiry": "25-Oct-2023",
+    "ClosePrice": "8610.95",
+    "OI": "75",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NIFTY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "19596.8",
+    "OI": "10900400",
+    "OIChange": "-122600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NIFTY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "19712.75",
+    "OI": "1748750",
+    "OIChange": "65700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NIFTY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "19809.85",
+    "OI": "199250",
+    "OIChange": "950",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AARTIIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "463.1",
+    "OI": "10717000",
+    "OIChange": "591000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AARTIIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "465.75",
+    "OI": "837000",
+    "OIChange": "86000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AARTIIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "468.95",
+    "OI": "115000",
+    "OIChange": "54000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4518.25",
+    "OI": "1739250",
+    "OIChange": "35250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4547.3",
+    "OI": "42750",
+    "OIChange": "8500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4515",
+    "OI": "750",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ABBOTINDIA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "24044.95",
+    "OI": "84160",
+    "OIChange": "-1760",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABBOTINDIA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "24196.65",
+    "OI": "1000",
+    "OIChange": "80",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABBOTINDIA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "24616.75",
+    "OI": "480",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ABCAPITAL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "185",
+    "OI": "25882200",
+    "OIChange": "113400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABCAPITAL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "185.55",
+    "OI": "1555200",
+    "OIChange": "183600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABCAPITAL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "186.1",
+    "OI": "86400",
+    "OIChange": "10800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABFRL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "214.45",
+    "OI": "24806600",
+    "OIChange": "-249600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABFRL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "215.75",
+    "OI": "1838200",
+    "OIChange": "-23400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ABFRL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "217",
+    "OI": "184600",
+    "OIChange": "-5200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ACC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1968.65",
+    "OI": "6112200",
+    "OIChange": "-3600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ACC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1984",
+    "OI": "80400",
+    "OIChange": "4200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ACC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1990.65",
+    "OI": "4800",
+    "OIChange": "900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ADANIENT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2568.3",
+    "OI": "12334800",
+    "OIChange": "768600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ADANIENT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2584.55",
+    "OI": "242100",
+    "OIChange": "20400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ADANIENT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2601.75",
+    "OI": "24000",
+    "OIChange": "-1200",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ADANIPORTS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "807.4",
+    "OI": "37336000",
+    "OIChange": "-243200",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ADANIPORTS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "812.8",
+    "OI": "1051200",
+    "OIChange": "6400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ADANIPORTS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "818.6",
+    "OI": "48000",
+    "OIChange": "-8000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ALKEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4155.8",
+    "OI": "721200",
+    "OIChange": "-86400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ALKEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4170.15",
+    "OI": "7400",
+    "OIChange": "400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ALKEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4102.3",
+    "OI": "200",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "AMBUJACEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "459.9",
+    "OI": "62978400",
+    "OIChange": "39600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AMBUJACEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "463.15",
+    "OI": "1056600",
+    "OIChange": "30600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AMBUJACEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "466.7",
+    "OI": "223200",
+    "OIChange": "55800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOHOSP",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4927.8",
+    "OI": "2579000",
+    "OIChange": "17125",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOHOSP",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4965.85",
+    "OI": "52125",
+    "OIChange": "3000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOHOSP",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "5003",
+    "OI": "2125",
+    "OIChange": "500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOTYRE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "431.45",
+    "OI": "9191900",
+    "OIChange": "283900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOTYRE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "432.3",
+    "OI": "394400",
+    "OIChange": "90100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "APOLLOTYRE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "432.6",
+    "OI": "23800",
+    "OIChange": "-1700",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASHOKLEY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "186.95",
+    "OI": "73500000",
+    "OIChange": "-2820000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASHOKLEY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "187.9",
+    "OI": "4910000",
+    "OIChange": "630000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASHOKLEY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "189",
+    "OI": "290000",
+    "OIChange": "15000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASIANPAINT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3252.6",
+    "OI": "4932000",
+    "OIChange": "235600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASIANPAINT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3275.95",
+    "OI": "119400",
+    "OIChange": "25000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASIANPAINT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3297.45",
+    "OI": "9600",
+    "OIChange": "3800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASTRAL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1988.15",
+    "OI": "3669633",
+    "OIChange": "60188",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ASTRAL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1995.8",
+    "OI": "235981",
+    "OIChange": "82942",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ASTRAL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2016.6",
+    "OI": "3303",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ATUL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "6842.15",
+    "OI": "324375",
+    "OIChange": "-7200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ATUL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "6817.95",
+    "OI": "91875",
+    "OIChange": "2100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ATUL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "6807.15",
+    "OI": "1650",
+    "OIChange": "225",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "701.8",
+    "OI": "13579000",
+    "OIChange": "502000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "697.35",
+    "OI": "506000",
+    "OIChange": "61000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "695",
+    "OI": "44000",
+    "OIChange": "15000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUROPHARMA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "876.05",
+    "OI": "14017300",
+    "OIChange": "7700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUROPHARMA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "880.85",
+    "OI": "267300",
+    "OIChange": "-6600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AUROPHARMA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "883.7",
+    "OI": "39600",
+    "OIChange": "-3300",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AXISBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "944.95",
+    "OI": "44380625",
+    "OIChange": "1755625",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AXISBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "951.15",
+    "OI": "869375",
+    "OIChange": "21250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "AXISBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "957.45",
+    "OI": "40625",
+    "OIChange": "-3125",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BAJAJ-AUTO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4661.75",
+    "OI": "2671750",
+    "OIChange": "12250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BAJAJ-AUTO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4689.95",
+    "OI": "44250",
+    "OIChange": "4250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BAJAJ-AUTO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4715",
+    "OI": "8000",
+    "OIChange": "250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BAJAJFINSV",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1526.1",
+    "OI": "9624000",
+    "OIChange": "-104000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BAJAJFINSV",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1537.2",
+    "OI": "554000",
+    "OIChange": "-3000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BAJAJFINSV",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1548.75",
+    "OI": "52500",
+    "OIChange": "3500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BAJFINANCE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "7178.8",
+    "OI": "4912875",
+    "OIChange": "-19125",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BAJFINANCE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "7229.5",
+    "OI": "146625",
+    "OIChange": "-625",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BAJFINANCE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "7284.9",
+    "OI": "7375",
+    "OIChange": "-375",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BALKRISIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2365.85",
+    "OI": "1935000",
+    "OIChange": "-57000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BALKRISIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2374.3",
+    "OI": "83100",
+    "OIChange": "-600",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BALKRISIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2380",
+    "OI": "300",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BALRAMCHIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "395.4",
+    "OI": "10598400",
+    "OIChange": "-240000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BALRAMCHIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "398",
+    "OI": "891200",
+    "OIChange": "-3200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BALRAMCHIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "411.5",
+    "OI": "27200",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BANDHANBNK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "228.05",
+    "OI": "86605000",
+    "OIChange": "-935000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANDHANBNK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "229.65",
+    "OI": "2415000",
+    "OIChange": "240000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANDHANBNK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "231.45",
+    "OI": "397500",
+    "OIChange": "57500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANKBARODA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "192.95",
+    "OI": "103404600",
+    "OIChange": "-702000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANKBARODA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "194.35",
+    "OI": "4440150",
+    "OIChange": "204750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BANKBARODA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "195.85",
+    "OI": "421200",
+    "OIChange": "64350",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BATAINDIA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1632.4",
+    "OI": "2429250",
+    "OIChange": "340875",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BATAINDIA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1619.05",
+    "OI": "238875",
+    "OIChange": "78375",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BATAINDIA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1607.15",
+    "OI": "16500",
+    "OIChange": "8250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "129.45",
+    "OI": "76419900",
+    "OIChange": "-969000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "130.45",
+    "OI": "2622000",
+    "OIChange": "205200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "131.55",
+    "OI": "364800",
+    "OIChange": "51300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BERGEPAINT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "694.55",
+    "OI": "8916600",
+    "OIChange": "-963600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BERGEPAINT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "692.2",
+    "OI": "841500",
+    "OIChange": "16500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BERGEPAINT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "691",
+    "OI": "33000",
+    "OIChange": "3300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARATFORG",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "954.15",
+    "OI": "8188000",
+    "OIChange": "-259000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARATFORG",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "959.8",
+    "OI": "158000",
+    "OIChange": "35000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARATFORG",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "966.25",
+    "OI": "10000",
+    "OIChange": "2000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARTIARTL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "872.9",
+    "OI": "37661800",
+    "OIChange": "1904750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARTIARTL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "878.65",
+    "OI": "655500",
+    "OIChange": "-70300",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHARTIARTL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "883.9",
+    "OI": "27550",
+    "OIChange": "8550",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "100",
+    "OI": "105577500",
+    "OIChange": "-2289000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "100.75",
+    "OI": "4998000",
+    "OIChange": "262500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BHEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "101.4",
+    "OI": "514500",
+    "OIChange": "10500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BIOCON",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "262.8",
+    "OI": "30845000",
+    "OIChange": "-405000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BIOCON",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "264.7",
+    "OI": "1735000",
+    "OIChange": "327500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BIOCON",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "266.85",
+    "OI": "242500",
+    "OIChange": "52500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BOSCHLTD",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "18235.2",
+    "OI": "203700",
+    "OIChange": "-1700",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BOSCHLTD",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "18347.65",
+    "OI": "4500",
+    "OIChange": "50",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BOSCHLTD",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "18500",
+    "OI": "150",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BPCL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "360.3",
+    "OI": "30846600",
+    "OIChange": "459000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BPCL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "361.65",
+    "OI": "896400",
+    "OIChange": "109800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BPCL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "362.9",
+    "OI": "41400",
+    "OIChange": "-1800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BRITANNIA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4566.65",
+    "OI": "2465400",
+    "OIChange": "196200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BRITANNIA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4597.3",
+    "OI": "48000",
+    "OIChange": "7200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BRITANNIA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4624.45",
+    "OI": "12400",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "BSOFT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "447.5",
+    "OI": "7418000",
+    "OIChange": "-282000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BSOFT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "450.35",
+    "OI": "268000",
+    "OIChange": "-30000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "BSOFT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "455",
+    "OI": "6000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CANBK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "333.25",
+    "OI": "49779900",
+    "OIChange": "1196100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CANBK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "335.8",
+    "OI": "1476900",
+    "OIChange": "216000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CANBK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "337.85",
+    "OI": "135000",
+    "OIChange": "13500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CANFINHOME",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "755.15",
+    "OI": "6611475",
+    "OIChange": "1007175",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CANFINHOME",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "760.1",
+    "OI": "485550",
+    "OIChange": "249600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CANFINHOME",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "764.2",
+    "OI": "26325",
+    "OIChange": "-6825",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CHAMBLFERT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "266.85",
+    "OI": "13775000",
+    "OIChange": "-676400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CHAMBLFERT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "267",
+    "OI": "1499100",
+    "OIChange": "-20900",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CHAMBLFERT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "276.3",
+    "OI": "38000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CHOLAFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1065.95",
+    "OI": "11671250",
+    "OIChange": "317500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CHOLAFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1072.9",
+    "OI": "267500",
+    "OIChange": "10000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CHOLAFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1078.85",
+    "OI": "45000",
+    "OIChange": "11250",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CIPLA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1256.65",
+    "OI": "11441950",
+    "OIChange": "-98800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CIPLA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1262.65",
+    "OI": "550550",
+    "OIChange": "43550",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CIPLA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1267.25",
+    "OI": "35100",
+    "OIChange": "-3250",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COALINDIA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "232.35",
+    "OI": "77313600",
+    "OIChange": "1331400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COALINDIA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "233.8",
+    "OI": "3733800",
+    "OIChange": "457800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COALINDIA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "235.05",
+    "OI": "180600",
+    "OIChange": "4200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COFORGE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "5112.9",
+    "OI": "695100",
+    "OIChange": "6000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "COFORGE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "5103.95",
+    "OI": "35550",
+    "OIChange": "19950",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "COFORGE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "5100.05",
+    "OI": "900",
+    "OIChange": "300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COLPAL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1969.7",
+    "OI": "2618700",
+    "OIChange": "-24850",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COLPAL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1981",
+    "OI": "39200",
+    "OIChange": "2800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "COLPAL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2037.9",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CONCOR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "695.15",
+    "OI": "4759000",
+    "OIChange": "-78000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CONCOR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "698.5",
+    "OI": "100000",
+    "OIChange": "7000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CONCOR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "687.2",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "COROMANDEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1078.1",
+    "OI": "1899800",
+    "OIChange": "2100",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "COROMANDEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1083.75",
+    "OI": "32900",
+    "OIChange": "-700",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "COROMANDEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1074.6",
+    "OI": "4200",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CROMPTON",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "305.35",
+    "OI": "12074400",
+    "OIChange": "-448200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CROMPTON",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "307.5",
+    "OI": "284400",
+    "OIChange": "19800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CROMPTON",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "310.5",
+    "OI": "18000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CUB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "132.2",
+    "OI": "34110000",
+    "OIChange": "-340000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CUB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "133",
+    "OI": "1750000",
+    "OIChange": "25000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CUB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "134.4",
+    "OI": "190000",
+    "OIChange": "-5000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "CUMMINSIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1775.4",
+    "OI": "6014400",
+    "OIChange": "668400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CUMMINSIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1779.95",
+    "OI": "280800",
+    "OIChange": "9000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "CUMMINSIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1765",
+    "OI": "10200",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DABUR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "573.25",
+    "OI": "15141250",
+    "OIChange": "-210000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DABUR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "578.15",
+    "OI": "136250",
+    "OIChange": "-2500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DABUR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "578",
+    "OI": "50000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DALBHARAT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2005.8",
+    "OI": "1756000",
+    "OIChange": "-48000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DALBHARAT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2012.35",
+    "OI": "33000",
+    "OIChange": "1000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DALBHARAT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1976.45",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DEEPAKNTR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2078.4",
+    "OI": "2060400",
+    "OIChange": "73200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DEEPAKNTR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2078",
+    "OI": "161700",
+    "OIChange": "5100",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DEEPAKNTR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2070",
+    "OI": "7500",
+    "OIChange": "600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DELTACORP",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "185.1",
+    "OI": "12885600",
+    "OIChange": "-198800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DELTACORP",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "187",
+    "OI": "2290400",
+    "OIChange": "-16800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DELTACORP",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "191",
+    "OI": "246400",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DIVISLAB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3725.45",
+    "OI": "2754400",
+    "OIChange": "-20200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DIVISLAB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3738.95",
+    "OI": "158000",
+    "OIChange": "8600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DIVISLAB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3757.6",
+    "OI": "10400",
+    "OIChange": "400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DIXON",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4818.05",
+    "OI": "1287000",
+    "OIChange": "-72800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DIXON",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4834.65",
+    "OI": "67400",
+    "OIChange": "2800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DIXON",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4836.9",
+    "OI": "7400",
+    "OIChange": "-400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DLF",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "493.45",
+    "OI": "43894950",
+    "OIChange": "671550",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DLF",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "496.1",
+    "OI": "1158300",
+    "OIChange": "70950",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "DLF",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "496.95",
+    "OI": "112200",
+    "OIChange": "1650",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DRREDDY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "5874.85",
+    "OI": "3178250",
+    "OIChange": "-122750",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DRREDDY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "5912.7",
+    "OI": "62125",
+    "OIChange": "-4250",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "DRREDDY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "5941.35",
+    "OI": "12250",
+    "OIChange": "750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "EICHERMOT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3387.3",
+    "OI": "4603900",
+    "OIChange": "-67900",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "EICHERMOT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3410.55",
+    "OI": "76300",
+    "OIChange": "1750",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "EICHERMOT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3449.1",
+    "OI": "5775",
+    "OIChange": "525",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ESCORTS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2598.4",
+    "OI": "1118700",
+    "OIChange": "-107800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ESCORTS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2615",
+    "OI": "17875",
+    "OIChange": "2475",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ESCORTS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2605",
+    "OI": "1100",
+    "OIChange": "275",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "EXIDEIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "264.7",
+    "OI": "16203600",
+    "OIChange": "-446400",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "EXIDEIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "266.4",
+    "OI": "1220400",
+    "OIChange": "108000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "EXIDEIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "266.95",
+    "OI": "108000",
+    "OIChange": "10800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FEDERALBNK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "133.55",
+    "OI": "121875000",
+    "OIChange": "1870000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FEDERALBNK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "134.5",
+    "OI": "4620000",
+    "OIChange": "550000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "FEDERALBNK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "135.45",
+    "OI": "415000",
+    "OIChange": "45000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GAIL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "118.05",
+    "OI": "128127450",
+    "OIChange": "-3266550",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GAIL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "118.95",
+    "OI": "4318800",
+    "OIChange": "-9150",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GAIL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "119.75",
+    "OI": "878400",
+    "OIChange": "27450",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GLENMARK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "813.8",
+    "OI": "5728950",
+    "OIChange": "-288550",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GLENMARK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "817.55",
+    "OI": "169650",
+    "OIChange": "13050",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GLENMARK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "825.3",
+    "OI": "1450",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GMRINFRA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "53.65",
+    "OI": "123142500",
+    "OIChange": "292500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GMRINFRA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "54",
+    "OI": "3622500",
+    "OIChange": "697500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GMRINFRA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "54.5",
+    "OI": "382500",
+    "OIChange": "180000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GNFC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "551.65",
+    "OI": "8036600",
+    "OIChange": "115700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GNFC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "555.9",
+    "OI": "534300",
+    "OIChange": "40300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GNFC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "596",
+    "OI": "35100",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJCP",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1028.95",
+    "OI": "8509000",
+    "OIChange": "158000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJCP",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1036.85",
+    "OI": "89000",
+    "OIChange": "1000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJCP",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1048.45",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJPROP",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1535.8",
+    "OI": "3747750",
+    "OIChange": "-15675",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJPROP",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1548.4",
+    "OI": "139175",
+    "OIChange": "7600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GODREJPROP",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1560",
+    "OI": "19000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GRANULES",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "303.5",
+    "OI": "12106000",
+    "OIChange": "1124000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GRANULES",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "305.55",
+    "OI": "960000",
+    "OIChange": "612000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GRANULES",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "307.6",
+    "OI": "70000",
+    "OIChange": "46000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GRASIM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1829.15",
+    "OI": "13651500",
+    "OIChange": "405650",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GRASIM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1838.2",
+    "OI": "57000",
+    "OIChange": "2375",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GRASIM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1860",
+    "OI": "1425",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "GUJGASLTD",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "461.9",
+    "OI": "7131250",
+    "OIChange": "-316250",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GUJGASLTD",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "460.9",
+    "OI": "451250",
+    "OIChange": "116250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "GUJGASLTD",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "462.85",
+    "OI": "26250",
+    "OIChange": "8750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3793.8",
+    "OI": "4095300",
+    "OIChange": "77700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3819",
+    "OI": "194700",
+    "OIChange": "13800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3829",
+    "OI": "26100",
+    "OIChange": "900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAVELLS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1296.55",
+    "OI": "5425000",
+    "OIChange": "112000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAVELLS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1306.5",
+    "OI": "77000",
+    "OIChange": "6500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HAVELLS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1317.85",
+    "OI": "2000",
+    "OIChange": "500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HCLTECH",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1140.4",
+    "OI": "10894800",
+    "OIChange": "40600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HCLTECH",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1148.25",
+    "OI": "335300",
+    "OIChange": "48300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HCLTECH",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1149.05",
+    "OI": "45500",
+    "OIChange": "11900",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HDFCAMC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2584.05",
+    "OI": "2675100",
+    "OIChange": "-167400",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HDFCAMC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2580.5",
+    "OI": "144000",
+    "OIChange": "9600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HDFCAMC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2580",
+    "OI": "13500",
+    "OIChange": "3000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HDFCBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1645.45",
+    "OI": "113902800",
+    "OIChange": "3685000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HDFCBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1656.95",
+    "OI": "3874200",
+    "OIChange": "226600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HDFCBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1670.65",
+    "OI": "320100",
+    "OIChange": "45650",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HDFCLIFE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "642.05",
+    "OI": "18775900",
+    "OIChange": "210100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HDFCLIFE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "646.5",
+    "OI": "281600",
+    "OIChange": "-9900",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HDFCLIFE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "650",
+    "OI": "39600",
+    "OIChange": "15400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HEROMOTOCO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3040.6",
+    "OI": "3921000",
+    "OIChange": "39600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HEROMOTOCO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3060.9",
+    "OI": "124800",
+    "OIChange": "2700",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HEROMOTOCO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3100",
+    "OI": "8400",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HINDALCO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "466.9",
+    "OI": "23217600",
+    "OIChange": "-590800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDALCO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "469.9",
+    "OI": "785400",
+    "OIChange": "29400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HINDALCO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "469.35",
+    "OI": "74200",
+    "OIChange": "12600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDCOPPER",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "147.6",
+    "OI": "23648600",
+    "OIChange": "-826800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDCOPPER",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "149",
+    "OI": "2342600",
+    "OIChange": "-26500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDCOPPER",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "152",
+    "OI": "238500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HINDPETRO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "266.45",
+    "OI": "44949600",
+    "OIChange": "-183600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDPETRO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "268.6",
+    "OI": "747900",
+    "OIChange": "27000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDPETRO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "271.05",
+    "OI": "121500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "HINDUNILVR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2543.65",
+    "OI": "9509700",
+    "OIChange": "-25500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDUNILVR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2560.4",
+    "OI": "349800",
+    "OIChange": "27000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "HINDUNILVR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2575",
+    "OI": "46800",
+    "OIChange": "1500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IBULHSGFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "165.8",
+    "OI": "54090600",
+    "OIChange": "-698700",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IBULHSGFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "165.2",
+    "OI": "4931700",
+    "OIChange": "-117300",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IBULHSGFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "170",
+    "OI": "255000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ICICIBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "968.8",
+    "OI": "83751500",
+    "OIChange": "3638600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "975.25",
+    "OI": "2226000",
+    "OIChange": "33600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "983",
+    "OI": "61600",
+    "OIChange": "7000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIGI",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1361.15",
+    "OI": "3737500",
+    "OIChange": "-141000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIGI",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1372.05",
+    "OI": "46000",
+    "OIChange": "6000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIGI",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1400",
+    "OI": "1500",
+    "OIChange": "500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ICICIPRULI",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "577.4",
+    "OI": "8247000",
+    "OIChange": "85500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ICICIPRULI",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "581.35",
+    "OI": "85500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ICICIPRULI",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "580",
+    "OI": "3000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "IDEA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "8.15",
+    "OI": "772080000",
+    "OIChange": "-5440000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDEA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "8.2",
+    "OI": "94720000",
+    "OIChange": "8240000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDEA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "8.3",
+    "OI": "12640000",
+    "OIChange": "1520000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDFC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "118.6",
+    "OI": "118750000",
+    "OIChange": "-420000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDFC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "119.25",
+    "OI": "1920000",
+    "OIChange": "30000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDFC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "120.7",
+    "OI": "80000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "IDFCFIRSTB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "87.4",
+    "OI": "156930000",
+    "OIChange": "6420000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDFCFIRSTB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "87.35",
+    "OI": "18180000",
+    "OIChange": "1215000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IDFCFIRSTB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "87.55",
+    "OI": "3315000",
+    "OIChange": "180000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IEX",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "129.5",
+    "OI": "45483750",
+    "OIChange": "333750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IEX",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "130.3",
+    "OI": "3435000",
+    "OIChange": "11250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IEX",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "131.4",
+    "OI": "258750",
+    "OIChange": "41250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IGL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "449.75",
+    "OI": "10682375",
+    "OIChange": "622875",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IGL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "452.6",
+    "OI": "504625",
+    "OIChange": "116875",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IGL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "454.25",
+    "OI": "49500",
+    "OIChange": "23375",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDHOTEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "384.65",
+    "OI": "18866000",
+    "OIChange": "-30000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDHOTEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "387.05",
+    "OI": "984000",
+    "OIChange": "-24000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDHOTEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "389.8",
+    "OI": "52000",
+    "OIChange": "18000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDIACEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "242.7",
+    "OI": "20830700",
+    "OIChange": "3146500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDIACEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "243.85",
+    "OI": "1313700",
+    "OIChange": "2900",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDIACEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "245.9",
+    "OI": "92800",
+    "OIChange": "17400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDIAMART",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3165.7",
+    "OI": "706200",
+    "OIChange": "-27300",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDIAMART",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3165.85",
+    "OI": "23400",
+    "OIChange": "1200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDIAMART",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3050",
+    "OI": "300",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDIGO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2562.7",
+    "OI": "5300400",
+    "OIChange": "-98400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDIGO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2578.25",
+    "OI": "87000",
+    "OIChange": "8100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDIGO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2604.05",
+    "OI": "4200",
+    "OIChange": "-900",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDUSINDBK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1435.5",
+    "OI": "19412500",
+    "OIChange": "722000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDUSINDBK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1443.9",
+    "OI": "418000",
+    "OIChange": "500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDUSINDBK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1450.9",
+    "OI": "32000",
+    "OIChange": "4000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INDUSTOWER",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "169.7",
+    "OI": "75809800",
+    "OIChange": "-1414400",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDUSTOWER",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "170.95",
+    "OI": "969000",
+    "OIChange": "149600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INDUSTOWER",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "172",
+    "OI": "85000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "INFY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1393.5",
+    "OI": "29244800",
+    "OIChange": "-692800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INFY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1403.15",
+    "OI": "1509600",
+    "OIChange": "33600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "INFY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1396.9",
+    "OI": "375200",
+    "OIChange": "10400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IOC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "94.1",
+    "OI": "97724250",
+    "OIChange": "-302250",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "IOC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "94.85",
+    "OI": "3441750",
+    "OIChange": "-58500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IOC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "95.5",
+    "OI": "575250",
+    "OIChange": "68250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IPCALAB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "900.05",
+    "OI": "2414750",
+    "OIChange": "239200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IPCALAB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "896.95",
+    "OI": "75400",
+    "OIChange": "17550",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IPCALAB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "896",
+    "OI": "11700",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "IRCTC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "646.75",
+    "OI": "12667375",
+    "OIChange": "114625",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IRCTC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "651.15",
+    "OI": "553000",
+    "OIChange": "42000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "IRCTC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "655.5",
+    "OI": "58625",
+    "OIChange": "-875",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ITC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "452.6",
+    "OI": "76676800",
+    "OIChange": "336000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ITC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "455.7",
+    "OI": "1932800",
+    "OIChange": "212800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ITC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "458.95",
+    "OI": "204800",
+    "OIChange": "38400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JINDALSTEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "677.75",
+    "OI": "26447500",
+    "OIChange": "330000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JINDALSTEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "681.3",
+    "OI": "203750",
+    "OIChange": "-12500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JINDALSTEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "683.4",
+    "OI": "20000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "JKCEMENT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3352.55",
+    "OI": "485000",
+    "OIChange": "10750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JKCEMENT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3352.85",
+    "OI": "8500",
+    "OIChange": "1000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JKCEMENT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3298",
+    "OI": "750",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "JSWSTEEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "831.75",
+    "OI": "18952650",
+    "OIChange": "-74250",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "JSWSTEEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "836.55",
+    "OI": "568350",
+    "OIChange": "76950",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "JSWSTEEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "836",
+    "OI": "17550",
+    "OIChange": "1350",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "JUBLFOOD",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "492.15",
+    "OI": "16893750",
+    "OIChange": "576250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JUBLFOOD",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "491.55",
+    "OI": "2613750",
+    "OIChange": "353750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "JUBLFOOD",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "493.25",
+    "OI": "333750",
+    "OIChange": "61250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "KOTAKBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1810.95",
+    "OI": "27372800",
+    "OIChange": "2074400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "KOTAKBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1822.2",
+    "OI": "730400",
+    "OIChange": "77600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "KOTAKBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1835.7",
+    "OI": "80800",
+    "OIChange": "19200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "L&TFH",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "126.05",
+    "OI": "72980472",
+    "OIChange": "-1320752",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "L&TFH",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "126.8",
+    "OI": "2222076",
+    "OIChange": "223100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "L&TFH",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "129",
+    "OI": "124936",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "LALPATHLAB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2358.05",
+    "OI": "654600",
+    "OIChange": "-18600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LALPATHLAB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2343.25",
+    "OI": "32400",
+    "OIChange": "-1200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LALPATHLAB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2345",
+    "OI": "7500",
+    "OIChange": "300",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "LAURUSLABS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "397.95",
+    "OI": "10698100",
+    "OIChange": "-549100",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LAURUSLABS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "397.55",
+    "OI": "1178100",
+    "OIChange": "8500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LAURUSLABS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "397.35",
+    "OI": "175100",
+    "OIChange": "6800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LICHSGFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "429.5",
+    "OI": "22138000",
+    "OIChange": "-74000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LICHSGFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "432.4",
+    "OI": "542000",
+    "OIChange": "58000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LICHSGFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "434.5",
+    "OI": "130000",
+    "OIChange": "-4000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2651.3",
+    "OI": "7749000",
+    "OIChange": "-304800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2661.1",
+    "OI": "310500",
+    "OIChange": "2100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2657.1",
+    "OI": "11100",
+    "OIChange": "1200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LTIM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "5122.15",
+    "OI": "1624800",
+    "OIChange": "-41550",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "LTIM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "5157.25",
+    "OI": "73650",
+    "OIChange": "600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "LTIM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "5165",
+    "OI": "4800",
+    "OIChange": "450",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LTTS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4263.95",
+    "OI": "859200",
+    "OIChange": "25400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LTTS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4251.1",
+    "OI": "182400",
+    "OIChange": "9200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LTTS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4262",
+    "OI": "9400",
+    "OIChange": "600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LUPIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1088.4",
+    "OI": "5544550",
+    "OIChange": "-244800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LUPIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1095.4",
+    "OI": "192950",
+    "OIChange": "-16150",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "LUPIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1101",
+    "OI": "19550",
+    "OIChange": "1700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "M&M",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1549.8",
+    "OI": "16338700",
+    "OIChange": "-776300",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "M&M",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1559.5",
+    "OI": "345100",
+    "OIChange": "7000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "M&M",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1568",
+    "OI": "41300",
+    "OIChange": "4900",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "M&MFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "286.95",
+    "OI": "36980000",
+    "OIChange": "-532000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "M&MFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "286.45",
+    "OI": "1844000",
+    "OIChange": "116000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "M&MFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "285.6",
+    "OI": "152000",
+    "OIChange": "-8000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MANAPPURAM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "146.55",
+    "OI": "74844000",
+    "OIChange": "5982000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MANAPPURAM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "147.45",
+    "OI": "3522000",
+    "OIChange": "2490000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MANAPPURAM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "148.7",
+    "OI": "384000",
+    "OIChange": "168000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MARICO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "576.75",
+    "OI": "9072000",
+    "OIChange": "1105200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MARICO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "579.5",
+    "OI": "172800",
+    "OIChange": "46800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MARICO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "592",
+    "OI": "2400",
+    "OIChange": "-1200",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MARUTI",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "9426.4",
+    "OI": "3033900",
+    "OIChange": "64700",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MARUTI",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "9496.15",
+    "OI": "87100",
+    "OIChange": "10900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MARUTI",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "9549",
+    "OI": "7500",
+    "OIChange": "300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MCDOWELL-N",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1013.75",
+    "OI": "9628500",
+    "OIChange": "-32200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MCDOWELL-N",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1021",
+    "OI": "156100",
+    "OIChange": "10500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MCDOWELL-N",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1027.8",
+    "OI": "5600",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MCX",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1587.05",
+    "OI": "2809200",
+    "OIChange": "46400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MCX",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1579.7",
+    "OI": "102400",
+    "OIChange": "22400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MCX",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1587.9",
+    "OI": "16400",
+    "OIChange": "1200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "METROPOLIS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1415.7",
+    "OI": "1690400",
+    "OIChange": "69600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "METROPOLIS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1425.75",
+    "OI": "40000",
+    "OIChange": "1600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "METROPOLIS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1432",
+    "OI": "5200",
+    "OIChange": "800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MFSL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "860.35",
+    "OI": "5904800",
+    "OIChange": "808000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MFSL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "865.6",
+    "OI": "68800",
+    "OIChange": "24000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MFSL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "870.5",
+    "OI": "11200",
+    "OIChange": "7200",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MGL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1014.05",
+    "OI": "3028000",
+    "OIChange": "348000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MGL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1020.4",
+    "OI": "162400",
+    "OIChange": "41600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MGL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1025",
+    "OI": "1600",
+    "OIChange": "800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MOTHERSON",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "95.45",
+    "OI": "66945900",
+    "OIChange": "5239800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MOTHERSON",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "96.4",
+    "OI": "1881500",
+    "OIChange": "631900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MOTHERSON",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "97.05",
+    "OI": "177500",
+    "OIChange": "35500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MPHASIS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2349.7",
+    "OI": "2187075",
+    "OIChange": "-29975",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MPHASIS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2356.2",
+    "OI": "61325",
+    "OIChange": "2750",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MPHASIS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2365.45",
+    "OI": "11275",
+    "OIChange": "550",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MRF",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "106769.7",
+    "OI": "40580",
+    "OIChange": "-2330",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MRF",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "107418.95",
+    "OI": "3150",
+    "OIChange": "-50",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MRF",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "107800",
+    "OI": "650",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MUTHOOTFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1362.55",
+    "OI": "4698100",
+    "OIChange": "16500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "MUTHOOTFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1356.1",
+    "OI": "62150",
+    "OIChange": "3300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "MUTHOOTFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1359",
+    "OI": "10450",
+    "OIChange": "1100",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NATIONALUM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "95.45",
+    "OI": "52905000",
+    "OIChange": "712500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NATIONALUM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "94.95",
+    "OI": "4470000",
+    "OIChange": "682500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NATIONALUM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "95.55",
+    "OI": "322500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NAUKRI",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4676.15",
+    "OI": "1280250",
+    "OIChange": "13650",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NAUKRI",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4709.2",
+    "OI": "22950",
+    "OIChange": "150",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NAUKRI",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4725",
+    "OI": "2850",
+    "OIChange": "150",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NAVINFLUOR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4423.45",
+    "OI": "721800",
+    "OIChange": "-19950",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NAVINFLUOR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4403",
+    "OI": "160200",
+    "OIChange": "9900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NAVINFLUOR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4440",
+    "OI": "1800",
+    "OIChange": "150",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NESTLEIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "22071.25",
+    "OI": "291760",
+    "OIChange": "1320",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NESTLEIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "22222.9",
+    "OI": "3680",
+    "OIChange": "360",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NESTLEIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "22726.3",
+    "OI": "40",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NMDC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "114.3",
+    "OI": "79227000",
+    "OIChange": "-49500",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NMDC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "115.1",
+    "OI": "4113000",
+    "OIChange": "171000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NMDC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "116",
+    "OI": "927000",
+    "OIChange": "9000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "NTPC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "215.1",
+    "OI": "63552000",
+    "OIChange": "-2634000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NTPC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "216.7",
+    "OI": "1335000",
+    "OIChange": "36000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "NTPC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "218.15",
+    "OI": "234000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "OBEROIRLTY",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1099.9",
+    "OI": "5735100",
+    "OIChange": "-37100",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "OBEROIRLTY",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1104.55",
+    "OI": "42000",
+    "OIChange": "4200",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "OBEROIRLTY",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1109",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "OFSS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3982.75",
+    "OI": "220000",
+    "OIChange": "-5600",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "OFSS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4010",
+    "OI": "5400",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "OFSS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4006",
+    "OI": "600",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ONGC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "178.5",
+    "OI": "35208250",
+    "OIChange": "1124200",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ONGC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "179.6",
+    "OI": "823900",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ONGC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "180",
+    "OI": "80850",
+    "OIChange": "23100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PAGEIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "40152.45",
+    "OI": "188730",
+    "OIChange": "675",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PAGEIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "40414.35",
+    "OI": "3795",
+    "OIChange": "705",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PAGEIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "40545.45",
+    "OI": "420",
+    "OIChange": "15",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1031.9",
+    "OI": "10074750",
+    "OIChange": "-144000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1026.95",
+    "OI": "1186500",
+    "OIChange": "85500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1028.8",
+    "OI": "44250",
+    "OIChange": "750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PERSISTENT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4871.25",
+    "OI": "1077825",
+    "OIChange": "-8925",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PERSISTENT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4874.3",
+    "OI": "64225",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PERSISTENT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4887",
+    "OI": "5250",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PETRONET",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "224.65",
+    "OI": "18054000",
+    "OIChange": "1944000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PETRONET",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "225.9",
+    "OI": "753000",
+    "OIChange": "39000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PETRONET",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "226.95",
+    "OI": "123000",
+    "OIChange": "12000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PFC",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "266.35",
+    "OI": "46977400",
+    "OIChange": "-874200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PFC",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "266.9",
+    "OI": "6466600",
+    "OIChange": "260400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PFC",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "268.95",
+    "OI": "427800",
+    "OIChange": "24800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIDILITIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2527.3",
+    "OI": "3081500",
+    "OIChange": "242750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIDILITIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2545.35",
+    "OI": "35000",
+    "OIChange": "18250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIDILITIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2567.75",
+    "OI": "1500",
+    "OIChange": "750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIIND",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3883.75",
+    "OI": "2537000",
+    "OIChange": "-258000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIIND",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3909.45",
+    "OI": "27250",
+    "OIChange": "8000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PIIND",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3910.95",
+    "OI": "2500",
+    "OIChange": "2250",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PNB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "61.5",
+    "OI": "264160000",
+    "OIChange": "8128000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PNB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "61.95",
+    "OI": "19856000",
+    "OIChange": "4912000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PNB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "62.2",
+    "OI": "1440000",
+    "OIChange": "192000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "POLYCAB",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "4576.75",
+    "OI": "1970100",
+    "OIChange": "13200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "POLYCAB",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "4576",
+    "OI": "97800",
+    "OIChange": "18900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "POLYCAB",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "4585",
+    "OI": "3300",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "POWERGRID",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "242.55",
+    "OI": "46791000",
+    "OIChange": "1622700",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "POWERGRID",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "244.05",
+    "OI": "1193400",
+    "OIChange": "64800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "POWERGRID",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "245.2",
+    "OI": "248400",
+    "OIChange": "24300",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "PVRINOX",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1638.75",
+    "OI": "3334958",
+    "OIChange": "110297",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PVRINOX",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1650.1",
+    "OI": "185185",
+    "OIChange": "1628",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "PVRINOX",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1660",
+    "OI": "21571",
+    "OIChange": "2442",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "RAMCOCEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "857.1",
+    "OI": "3377900",
+    "OIChange": "59500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "RAMCOCEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "855.4",
+    "OI": "161500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RAMCOCEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "859.6",
+    "OI": "10200",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RBLBANK",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "223.85",
+    "OI": "43250000",
+    "OIChange": "420000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RBLBANK",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "225.05",
+    "OI": "1860000",
+    "OIChange": "45000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RBLBANK",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "226.85",
+    "OI": "215000",
+    "OIChange": "100000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RECLTD",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "214.9",
+    "OI": "72384000",
+    "OIChange": "-792000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "RECLTD",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "216.15",
+    "OI": "2640000",
+    "OIChange": "24000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "RECLTD",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "216.3",
+    "OI": "560000",
+    "OIChange": "40000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "RELIANCE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2540.6",
+    "OI": "20322000",
+    "OIChange": "349250",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RELIANCE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2557.15",
+    "OI": "889500",
+    "OIChange": "19500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "RELIANCE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2575.75",
+    "OI": "59250",
+    "OIChange": "-6250",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SAIL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "93",
+    "OI": "110744000",
+    "OIChange": "-400000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SAIL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "93.4",
+    "OI": "6176000",
+    "OIChange": "512000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SAIL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "94.2",
+    "OI": "464000",
+    "OIChange": "24000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBICARD",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "870.15",
+    "OI": "8782400",
+    "OIChange": "9600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBICARD",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "868.7",
+    "OI": "315200",
+    "OIChange": "38400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBICARD",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "868.5",
+    "OI": "40800",
+    "OIChange": "800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBILIFE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1341.85",
+    "OI": "8676000",
+    "OIChange": "34500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SBILIFE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1350.05",
+    "OI": "119250",
+    "OIChange": "3750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SBILIFE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1360",
+    "OI": "6750",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "576.2",
+    "OI": "100437000",
+    "OIChange": "2256000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SBIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "580.05",
+    "OI": "6745500",
+    "OIChange": "433500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SBIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "584.05",
+    "OI": "897000",
+    "OIChange": "15000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SHREECEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "24231.4",
+    "OI": "199400",
+    "OIChange": "-4500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SHREECEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "24344.4",
+    "OI": "1250",
+    "OIChange": "275",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SHREECEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "24298.3",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SHRIRAMFIN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1856.05",
+    "OI": "6607200",
+    "OIChange": "-94800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SHRIRAMFIN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1868.5",
+    "OI": "57000",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SHRIRAMFIN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1875",
+    "OI": "2400",
+    "OIChange": "600",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SIEMENS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3677.95",
+    "OI": "2037200",
+    "OIChange": "35750",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SIEMENS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3706.15",
+    "OI": "46475",
+    "OIChange": "4400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SIEMENS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3735",
+    "OI": "8800",
+    "OIChange": "-825",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SRF",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2299.7",
+    "OI": "4054500",
+    "OIChange": "11625",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SRF",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2310.7",
+    "OI": "318375",
+    "OIChange": "20625",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SRF",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2330",
+    "OI": "7500",
+    "OIChange": "1875",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SUNPHARMA",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1153.3",
+    "OI": "22302700",
+    "OIChange": "-184800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SUNPHARMA",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1161.65",
+    "OI": "189700",
+    "OIChange": "4900",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "SUNPHARMA",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1170.65",
+    "OI": "13300",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SUNTV",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "549.95",
+    "OI": "8673000",
+    "OIChange": "189000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SUNTV",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "553",
+    "OI": "166500",
+    "OIChange": "22500",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SUNTV",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "539.5",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SYNGENE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "818.75",
+    "OI": "3107000",
+    "OIChange": "-59000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SYNGENE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "824",
+    "OI": "57000",
+    "OIChange": "6000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "SYNGENE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "821.55",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATACHEM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1004.45",
+    "OI": "9431950",
+    "OIChange": "-319000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATACHEM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "998.9",
+    "OI": "1217150",
+    "OIChange": "146850",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATACHEM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "995.2",
+    "OI": "121000",
+    "OIChange": "3850",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATACOMM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1680.45",
+    "OI": "4171000",
+    "OIChange": "-58000",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATACOMM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1693.65",
+    "OI": "150500",
+    "OIChange": "13500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATACOMM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1726.05",
+    "OI": "7500",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATACONSUM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "853.2",
+    "OI": "10947600",
+    "OIChange": "-208800",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATACONSUM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "858.3",
+    "OI": "274500",
+    "OIChange": "23400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATACONSUM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "865.35",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATAMOTORS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "621.25",
+    "OI": "63961125",
+    "OIChange": "5318100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATAMOTORS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "625.55",
+    "OI": "3371550",
+    "OIChange": "195225",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATAMOTORS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "629.7",
+    "OI": "401850",
+    "OIChange": "51300",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATAPOWER",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "238.45",
+    "OI": "86899500",
+    "OIChange": "124875",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATAPOWER",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "240.15",
+    "OI": "4593375",
+    "OIChange": "820125",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATAPOWER",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "242.3",
+    "OI": "607500",
+    "OIChange": "43875",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TATASTEEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "120.35",
+    "OI": "216254500",
+    "OIChange": "-3778500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATASTEEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "121.05",
+    "OI": "7760500",
+    "OIChange": "170500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TATASTEEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "121.9",
+    "OI": "1573000",
+    "OIChange": "99000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TCS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "3453.25",
+    "OI": "10406900",
+    "OIChange": "-40250",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TCS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3477.95",
+    "OI": "232225",
+    "OIChange": "9800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TCS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3498.4",
+    "OI": "19425",
+    "OIChange": "2625",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TECHM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1238.6",
+    "OI": "14311800",
+    "OIChange": "-694200",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TECHM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1246.45",
+    "OI": "474600",
+    "OIChange": "7800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TECHM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1252.05",
+    "OI": "43200",
+    "OIChange": "1800",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TITAN",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2996.25",
+    "OI": "5748000",
+    "OIChange": "77250",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TITAN",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "3016.25",
+    "OI": "147000",
+    "OIChange": "-750",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TITAN",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "3031.75",
+    "OI": "15750",
+    "OIChange": "2625",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TORNTPHARM",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "2039",
+    "OI": "1735000",
+    "OIChange": "27500",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TORNTPHARM",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "2049.85",
+    "OI": "9500",
+    "OIChange": "-1500",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "TORNTPHARM",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "2027.8",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TRENT",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1901.4",
+    "OI": "4130000",
+    "OIChange": "-224000",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TRENT",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1913.8",
+    "OI": "90000",
+    "OIChange": "36400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TRENT",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1923.6",
+    "OI": "20800",
+    "OIChange": "17200",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TVSMOTOR",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1356.75",
+    "OI": "6361600",
+    "OIChange": "8400",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TVSMOTOR",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1363.3",
+    "OI": "161700",
+    "OIChange": "11900",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "TVSMOTOR",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1368",
+    "OI": "2100",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "UBL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "1543.6",
+    "OI": "2236400",
+    "OIChange": "11600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "UBL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "1548.15",
+    "OI": "21200",
+    "OIChange": "2000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "UBL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "1590",
+    "OI": "400",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ULTRACEMCO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "8145.8",
+    "OI": "1614000",
+    "OIChange": "-30100",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ULTRACEMCO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "8204.4",
+    "OI": "25200",
+    "OIChange": "600",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ULTRACEMCO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "8200",
+    "OI": "1100",
+    "OIChange": "200",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "UPL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "611.6",
+    "OI": "32407700",
+    "OIChange": "217100",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "UPL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "616.2",
+    "OI": "2243800",
+    "OIChange": "98800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "UPL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "619",
+    "OI": "261300",
+    "OIChange": "23400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VEDL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "242.95",
+    "OI": "76622000",
+    "OIChange": "466000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VEDL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "242.6",
+    "OI": "8414000",
+    "OIChange": "284000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VEDL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "242.7",
+    "OI": "1936000",
+    "OIChange": "60000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VOLTAS",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "841.75",
+    "OI": "8269200",
+    "OIChange": "-385200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VOLTAS",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "846.1",
+    "OI": "399000",
+    "OIChange": "9000",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "VOLTAS",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "851",
+    "OI": "40200",
+    "OIChange": "2400",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "WIPRO",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "419.6",
+    "OI": "34210500",
+    "OIChange": "-424500",
+    "Interpretation": "Short Covering",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "WIPRO",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "422.3",
+    "OI": "1780500",
+    "OIChange": "99000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "WIPRO",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "425.15",
+    "OI": "207000",
+    "OIChange": "3000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ZEEL",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "282.3",
+    "OI": "110253000",
+    "OIChange": "873000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ZEEL",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "282.6",
+    "OI": "5814000",
+    "OIChange": "4062000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ZEEL",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "282.3",
+    "OI": "444000",
+    "OIChange": "351000",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  },
+  {
+    "Script": "ZYDUSLIFE",
+    "Expiry": "31-Aug-2023",
+    "ClosePrice": "660.2",
+    "OI": "7419600",
+    "OIChange": "-79200",
+    "Interpretation": "Long Unwinding",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ZYDUSLIFE",
+    "Expiry": "28-Sep-2023",
+    "ClosePrice": "664.2",
+    "OI": "181800",
+    "OIChange": "10800",
+    "Interpretation": "Short builtup",
+    "Trend": "Bearish"
+  },
+  {
+    "Script": "ZYDUSLIFE",
+    "Expiry": "26-Oct-2023",
+    "ClosePrice": "661.2",
+    "OI": "0",
+    "OIChange": "0",
+    "Interpretation": "Long buildup",
+    "Trend": "Bullish"
+  }
+]

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useMatch, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -16,12 +16,11 @@ import AnalysisTable from './AnalysisTable'
 import { AnalysisColumns } from './AnalysisColumns'
 
 // Others
-import { indices as indicesNames, scriptNames } from '../../../constants/option-analysis'
-import { getFutureAnalysis, getOptionAnalysis } from '../../../utils/api'
+import { indices as indicesNames, scriptNames } from '../../../../constants/option-analysis'
+import { getFutureAnalysis } from '../../../../utils/api'
 import { toast } from 'sonner'
 
 export default function OptionAnalysis() {
-  const url = useMatch('/dashboard/:type')
   const [searchParams, setSearchParams] = useSearchParams()
 
   const [rows, setRows] = useState([])
@@ -30,14 +29,20 @@ export default function OptionAnalysis() {
   const [expiryDates, setExpiryDates] = useState(['Select'])
 
   const data = useMemo(() => {
-    // filter rows by expiry date
+    let filteredRows = rows
+    const script = searchParams.get('indices') || searchParams.get('scriptName')
+    const expiryDate = searchParams.get('expiryDate')
 
-    if (searchParams.get('expiryDate') === 'Select') {
-      return rows
+    if (script && script !== 'Select') {
+      filteredRows = rows.filter((row) => row.Script === script)
     }
 
-    return rows.filter((row) => row.ExpiryDate === searchParams.get('expiryDate'))
-  }, [rows, searchParams.get('expiryDate')])
+    if (expiryDate && expiryDate !== 'Select') {
+      return filteredRows.filter((row) => row.Expiry === expiryDate)
+    }
+
+    return filteredRows
+  }, [rows, searchParams])
 
   function handleSearchParamChange(key, value) {
     setSearchParams((prev) => {
@@ -53,38 +58,14 @@ export default function OptionAnalysis() {
   }, [searchParams])
 
   useEffect(() => {
-    setRows([])
-
-    if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
-      toast.error('indices or script name not provided')
-      return
-    }
-
-    switch (url.params.type) {
-      case 'option-analysis':
-        getOptionAnalysis(searchParams.get('indices') || searchParams.get('scriptName'))
-          .then((data) => {
-            setRows(data)
-            const set = new Set(data.map((item) => item.ExpiryDate))
-            setExpiryDates(['Select', ...set])
-          })
-          .catch((error) => toast.error(error.message))
-        break
-
-      case 'future-analysis':
-        getFutureAnalysis()
-          .then(setRows)
-          .catch((error) => toast.error(error.message))
-        break
-    }
-  }, [indices, scriptName, url.params.type])
-
-  // Updates expiry date when indices or script name is changed
-  useEffect(() => {
-    if (expiryDates.length > 1) {
-      handleSearchParamChange('expiryDate', expiryDates[1])
-    }
-  }, [expiryDates])
+    getFutureAnalysis()
+      .then((data) => {
+        setRows(data)
+        const expiryDates = data.map((item) => item.Expiry)
+        setExpiryDates(['Select', ...new Set(expiryDates)])
+      })
+      .catch((error) => toast.error(error.message))
+  }, [])
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -96,29 +77,12 @@ export default function OptionAnalysis() {
       if (name === 'indices' || name === 'scriptName') {
         newParams.delete('indices')
         newParams.delete('scriptName')
-
-        // Since expiry date is dependent on indices or script name
-        newParams.set('expiryDate', 'Select') // expiryDates[0]
       }
 
-      // If nothing is selected
-      if (!prev.get('indices') && !prev.get('scriptName')) {
-        newParams.set('indices', 'NIFTY')
-      }
-
-      // Finally, update search params (from input - handleChange)
       newParams.set(name, value)
-
       return newParams
     })
   }
-
-  useEffect(() => {
-    // Setting default search params (if not provided)
-    if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
-      setSearchParams({ indices: 'NIFTY' })
-    }
-  })
 
   return (
     <Container
@@ -140,7 +104,7 @@ export default function OptionAnalysis() {
           >
             {indicesNames.map((item, index) => {
               return (
-                <MenuItem disabled={index === 0} selected={index === 0} key={index} value={item}>
+                <MenuItem selected={index === 0} key={index} value={item}>
                   {item}
                 </MenuItem>
               )
@@ -165,7 +129,7 @@ export default function OptionAnalysis() {
           >
             {scriptNames.map((item, index) => {
               return (
-                <MenuItem selected={index === 0} disabled={index === 0} key={index} value={item}>
+                <MenuItem selected={index === 0} key={index} value={item}>
                   {item}
                 </MenuItem>
               )
@@ -224,7 +188,6 @@ export default function OptionAnalysis() {
           columns={AnalysisColumns}
           pageSizeOptions={[25]}
           initialState={{ pagination: { paginationModel: { pageSize: 25 } } }}
-          getRowId={(row) => row.CEOptionType + row.Strike}
           // autoPageSize
         />
       </Box>

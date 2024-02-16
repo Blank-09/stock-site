@@ -9,7 +9,7 @@ import TableRow from '@mui/material/TableRow'
 import { useMemo } from 'react'
 
 const AnalysisTable = ({ label, data }) => {
-  const { ce, pe } = useMemo(() => {
+  const { ce } = useMemo(() => {
     let ce = {
       longBuildup: 0,
       shortCovering: 0,
@@ -20,40 +20,20 @@ const AnalysisTable = ({ label, data }) => {
       neutral: 0,
     }
 
-    let pe = {
-      longBuildup: 0,
-      shortCovering: 0,
-      longUnwinding: 0,
-      shortBuiltup: 0,
-      bullish: 0,
-      bearish: 0,
-      neutral: 0,
-    }
-
     data.forEach((item) => {
-      if (item.CEInterpretation === 'Long buildup') ce.longBuildup++
-      else if (item.CEInterpretation === 'Short covering') ce.shortCovering++
-      else if (item.CEInterpretation === 'Long unwinding') ce.longUnwinding++
-      else if (item.CEInterpretation === 'Short builtup') ce.shortBuiltup++
+      if (item.nterpretation === 'Long buildup') ce.longBuildup++
+      else if (item.Interpretation === 'Short covering') ce.shortCovering++
+      else if (item.Interpretation === 'Long unwinding') ce.longUnwinding++
+      else if (item.Interpretation === 'Short builtup') ce.shortBuiltup++
 
-      if (item.CETrend === 'Bullish') ce.bullish++
-      else if (item.CETrend === 'Bearish') ce.bearish++
-      else if (item.CETrend === 'Neutral') ce.neutral++
-
-      if (item.PEInterpretation === 'Long buildup') pe.longBuildup++
-      else if (item.PEInterpretation === 'Short covering') pe.shortCovering++
-      else if (item.PEInterpretation === 'Long unwinding') pe.longUnwinding++
-      else if (item.PEInterpretation === 'Short builtup') pe.shortBuiltup++
-
-      if (item.PETrend === 'Bullish') pe.bullish++
-      else if (item.PETrend === 'Bearish') pe.bearish++
-      else if (item.PETrend === 'Neutral') pe.neutral++
+      if (item.Trend === 'Bullish') ce.bullish++
+      else if (item.Trend === 'Bearish') ce.bearish++
+      else if (item.Trend === 'Neutral') ce.neutral++
     })
 
     ce.highestValue = Math.max(ce.longBuildup, ce.shortCovering, ce.longUnwinding, ce.shortBuiltup)
-    pe.highestValue = Math.max(pe.longBuildup, pe.shortCovering, pe.longUnwinding, pe.shortBuiltup)
 
-    return { ce, pe }
+    return { ce }
   }, [data])
 
   return (
@@ -69,8 +49,6 @@ const AnalysisTable = ({ label, data }) => {
           >
             <TableCell colSpan={2}>Call Trend</TableCell>
             <TableCell colSpan={4}>Call Interpretation</TableCell>
-            <TableCell colSpan={2}>Put Trend</TableCell>
-            <TableCell colSpan={4}>Put Interpretation</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -81,12 +59,6 @@ const AnalysisTable = ({ label, data }) => {
               },
             }}
           >
-            <TableCell sx={{ color: 'lightGreen.main' }}>Bullish</TableCell>
-            <TableCell sx={{ color: 'error.main' }}>Bearish</TableCell>
-            <TableCell sx={{ color: 'lightGreen.main' }}>Long Buildup</TableCell>
-            <TableCell sx={{ color: 'success.main' }}>Short Covering</TableCell>
-            <TableCell sx={{ color: 'lightRed.main' }}>Long Unwinding</TableCell>
-            <TableCell sx={{ color: 'error.main' }}>Short Builtup</TableCell>
             <TableCell sx={{ color: 'lightGreen.main' }}>Bullish</TableCell>
             <TableCell sx={{ color: 'error.main' }}>Bearish</TableCell>
             <TableCell sx={{ color: 'lightGreen.main' }}>Long Buildup</TableCell>
@@ -118,22 +90,6 @@ const AnalysisTable = ({ label, data }) => {
             </TableCell>
             <TableCell sx={{ bgcolor: ce.highestValue && ce.shortBuiltup === ce.highestValue && 'error.main' }}>
               {ce.shortBuiltup}
-            </TableCell>
-
-            <TableCell sx={{ bgcolor: pe.bullish > pe.bearish && 'lightGreen.main' }}>{pe.bullish}</TableCell>
-            <TableCell sx={{ bgcolor: pe.bullish < pe.bearish && 'error.main' }}>{pe.bearish}</TableCell>
-
-            <TableCell sx={{ bgcolor: pe.highestValue && pe.longBuildup === pe.highestValue && 'lightGreen.main' }}>
-              {pe.longBuildup}
-            </TableCell>
-            <TableCell sx={{ bgcolor: pe.highestValue && pe.shortCovering === pe.highestValue && 'success.main' }}>
-              {pe.shortCovering}
-            </TableCell>
-            <TableCell sx={{ bgcolor: pe.highestValue && pe.longUnwinding === pe.highestValue && 'lightRed.main' }}>
-              {pe.longUnwinding}
-            </TableCell>
-            <TableCell sx={{ bgcolor: pe.highestValue && pe.shortBuiltup === pe.highestValue && 'error.main' }}>
-              {pe.shortBuiltup}
             </TableCell>
           </TableRow>
         </TableBody>

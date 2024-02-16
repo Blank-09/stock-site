@@ -36,23 +36,19 @@ const routes = createBrowserRouter([
       },
       {
         path: '/dashboard/oi-range',
-        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
-        loader: () => ({ url: '/api/option-analysis.json' }),
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis/OIRange')),
       },
       {
         path: '/dashboard/option-analysis',
         Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
-        loader: () => ({ url: '/api/option-analysis.json' }),
       },
       {
         path: '/dashboard/future-analysis',
-        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
-        loader: () => ({ url: '/api/option-analysis.json' }),
+        Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis/FutureAnalysis')),
       },
       {
         path: '/dashboard/cash-segment-analysis',
         Component: React.lazy(() => import('../components/dashboard/EODDataAnalysis')),
-        loader: () => ({ url: '/api/option-analysis.json' }),
       },
       {
         path: '/dashboard/funds',

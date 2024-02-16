@@ -4,6 +4,8 @@ import { DataGrid } from '@mui/x-data-grid'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container, Button, Tooltip, Dialog, DialogTitle, DialogContent, TextField, MenuItem } from '@mui/material'
+import { scriptNames } from '../constants/option-analysis'
+import { getRecommendation } from '../utils/api'
 
 const styles = `
 .custom-status-box {
@@ -47,40 +49,40 @@ const styles = `
 const columns = [
   { field: 'id', headerName: '#', width: 70, sortable: false },
   { field: 'Script', headerName: 'Script', width: 150, sortable: false },
-  { field: 'Recommanded Date', headerName: 'Recommanded Date', width: 150, sortable: false },
+  { field: 'Date', headerName: 'Recommanded Date', width: 150, sortable: false },
   { field: 'Price', headerName: 'Price', width: 150, sortable: false },
   {
-    field: 'LTP',
-    headerName: 'LTP',
+    field: 'Duration',
+    headerName: 'Duration',
     width: 150,
     sortable: false,
   },
   {
-    field: 'Buy/Sell',
-    headerName: 'Buy/Sell',
+    field: 'Target',
+    headerName: 'Target',
     width: 150,
     sortable: false,
   },
-  {
-    field: 'Change',
-    headerName: 'Change',
-    width: 200,
-    sortable: false,
-    renderCell: (params) => {
-      const ltp = parseFloat(params.row.LTP)
-      const price = parseFloat(params.row.Price)
-      const difference = ltp - price
-      const percentageChange = ((difference / price) * 100).toFixed(2)
+  // {
+  //   field: 'Change',
+  //   headerName: 'Change',
+  //   width: 200,
+  //   sortable: false,
+  //   renderCell: (params) => {
+  //     const ltp = parseFloat(params.row.LTP)
+  //     const price = parseFloat(params.row.Price)
+  //     const difference = ltp - price
+  //     const percentageChange = ((difference / price) * 100).toFixed(2)
 
-      return (
-        <div>
-          <div style={{ color: difference >= 0 ? 'green' : 'red' }}>
-            {difference.toFixed(2)} ({percentageChange}%)
-          </div>
-        </div>
-      )
-    },
-  },
+  //     return (
+  //       <div>
+  //         <div style={{ color: difference >= 0 ? 'green' : 'red' }}>
+  //           {difference.toFixed(2)} ({percentageChange}%)
+  //         </div>
+  //       </div>
+  //     )
+  //   },
+  // },
   { field: 'StopLoss', headerName: 'StopLoss', width: 150, sortable: false },
   {
     field: 'Status',
@@ -126,16 +128,8 @@ const columns = [
   cellClassName: index && 'borderCell',
 }))
 
-// ... (existing imports)
-
 export default function Recommendation() {
   const [rows, setRows] = useState([])
-  const [scriptNames, setScriptNames] = useState([])
-  const [filter, setFilter] = useState({
-    indices: 'Select',
-    scriptName: 'Select',
-  })
-
   const [openRecommendDialog, setOpenRecommendDialog] = useState(false)
   const [recommendationForm, setRecommendationForm] = useState({
     script: '',
@@ -147,14 +141,6 @@ export default function Recommendation() {
 
   const [tooltipContent, setTooltipContent] = useState(null)
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 })
-
-  const handleChange = (event) => {
-    const name = event.target.name
-    setFilter({
-      ...filter,
-      [name]: event.target.value,
-    })
-  }
 
   const handleRecommend = () => {
     setOpenRecommendDialog(true)
@@ -196,25 +182,23 @@ export default function Recommendation() {
       comment: recommendationForm.comment,
     }
 
-    // Save the JSON data to a file (you can customize this part based on your needs)
-    // const blob = new Blob([JSON.stringify(jsonData)], { type: 'application/json' })
-    // const link = document.createElement('a')
-    // link.href = URL.createObjectURL(blob)
-    // link.download = 'recommendation.json'
-    // link.click()
+    // Send to server
+    console.log(jsonData)
   }
 
   useEffect(() => {
-    axios.get('/api/recommendation.json').then((res) => {
-      const updatedRows = res.data.map((row, index) => {
-        row['id'] = index + 1
-        return row
-      })
+    getRecommendation().then((res) => {
+      const updatedRows = res.map((row, index) => ({ ...row, id: index + 1 }))
       setRows(updatedRows)
-
-      const uniqueScriptNames = Array.from(new Set(updatedRows.map((row) => row.Script)))
-      setScriptNames(['Select', ...uniqueScriptNames])
     })
+    // axios.get('/api/recommendation.json').then((res) => {
+    //   const updatedRows = res.data.map((row, index) => {
+    //     row.id = index + 1
+    //     return row
+    //   })
+
+    //   setRows(updatedRows)
+    // })
   }, [])
 
   return (
@@ -247,7 +231,7 @@ export default function Recommendation() {
         )}
 
         <Tooltip title="Recommend" arrow>
-          <Button size="small" variant="contained" color="primary" onClick={handleRecommend}>
+          <Button sx={{ mb: 3 }} variant="contained" color="primary" onClick={handleRecommend}>
             Recommend
           </Button>
         </Tooltip>
@@ -344,8 +328,8 @@ export default function Recommendation() {
                   value={recommendationForm.view}
                   onChange={(e) => setRecommendationForm({ ...recommendationForm, view: e.target.value })}
                 >
-                  <MenuItem value="Option1">Short-Term</MenuItem>
-                  <MenuItem value="Option2">Long-Term</MenuItem>
+                  <MenuItem value="short-term">Short Term</MenuItem>
+                  <MenuItem value="long-term">Long Term</MenuItem>
                 </TextField>
               </FormControl>
             </Box>
@@ -353,9 +337,9 @@ export default function Recommendation() {
             <TextField
               id="comments"
               label="Comments"
+              variant="outlined"
               multiline
               rows={4}
-              variant="outlined"
               fullWidth
               value={recommendationForm.comment}
               onChange={(e) => setRecommendationForm({ ...recommendationForm, comment: e.target.value })}

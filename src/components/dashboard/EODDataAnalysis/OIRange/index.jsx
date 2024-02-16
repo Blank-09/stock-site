@@ -1,5 +1,6 @@
+import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
-import { useMatch, useSearchParams } from 'react-router-dom'
+import { useLoaderData, useSearchParams } from 'react-router-dom'
 
 // MUI
 import Box from '@mui/material/Box'
@@ -16,28 +17,14 @@ import AnalysisTable from './AnalysisTable'
 import { AnalysisColumns } from './AnalysisColumns'
 
 // Others
-import { indices as indicesNames, scriptNames } from '../../../constants/option-analysis'
-import { getFutureAnalysis, getOptionAnalysis } from '../../../utils/api'
-import { toast } from 'sonner'
+import { indices, scriptNames } from '../../../../constants/option-analysis'
 
 export default function OptionAnalysis() {
-  const url = useMatch('/dashboard/:type')
-  const [searchParams, setSearchParams] = useSearchParams()
+  const loaderData = useLoaderData()
 
   const [rows, setRows] = useState([])
-  const [indices, setIndices] = useState(searchParams.get('indices'))
-  const [scriptName, setScriptName] = useState(searchParams.get('scriptName'))
   const [expiryDates, setExpiryDates] = useState(['Select'])
-
-  const data = useMemo(() => {
-    // filter rows by expiry date
-
-    if (searchParams.get('expiryDate') === 'Select') {
-      return rows
-    }
-
-    return rows.filter((row) => row.ExpiryDate === searchParams.get('expiryDate'))
-  }, [rows, searchParams.get('expiryDate')])
+  const [searchParams, setSearchParams] = useSearchParams()
 
   function handleSearchParamChange(key, value) {
     setSearchParams((prev) => {
@@ -47,37 +34,41 @@ export default function OptionAnalysis() {
     })
   }
 
-  useEffect(() => {
-    setIndices(searchParams.get('indices'))
-    setScriptName(searchParams.get('scriptName'))
-  }, [searchParams])
-
-  useEffect(() => {
-    setRows([])
-
-    if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
-      toast.error('indices or script name not provided')
-      return
+  // Used useMemo to avoid re-rendering of the table
+  const data = useMemo(() => {
+    if (searchParams.size === 0) {
+      return rows
     }
 
-    switch (url.params.type) {
-      case 'option-analysis':
-        getOptionAnalysis(searchParams.get('indices') || searchParams.get('scriptName'))
-          .then((data) => {
-            setRows(data)
-            const set = new Set(data.map((item) => item.ExpiryDate))
-            setExpiryDates(['Select', ...set])
-          })
-          .catch((error) => toast.error(error.message))
-        break
+    // Filtering rows based on search params
+    const filteredRows = rows.filter((row) => {
+      let res = true
 
-      case 'future-analysis':
-        getFutureAnalysis()
-          .then(setRows)
-          .catch((error) => toast.error(error.message))
-        break
-    }
-  }, [indices, scriptName, url.params.type])
+      if (searchParams.get('indices')) {
+        res = res && row.Symbol === searchParams.get('indices')
+      } else if (searchParams.get('scriptName')) {
+        res = res && row.Symbol === searchParams.get('scriptName')
+      }
+
+      return res
+    })
+
+    const set = new Set()
+    filteredRows.forEach((row) => set.add(row.Expiry))
+
+    const expiryDates = ['Select', ...set].sort((a, b) => new Date(a) - new Date(b))
+    setExpiryDates(expiryDates)
+
+    return filteredRows.filter((row) => {
+      let res = true
+
+      if (searchParams.get('expiryDate')) {
+        res = res && row.Expiry === searchParams.get('expiryDate')
+      }
+
+      return res
+    })
+  }, [rows, searchParams])
 
   // Updates expiry date when indices or script name is changed
   useEffect(() => {
@@ -114,11 +105,15 @@ export default function OptionAnalysis() {
   }
 
   useEffect(() => {
-    // Setting default search params (if not provided)
-    if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
-      setSearchParams({ indices: 'NIFTY' })
-    }
-  })
+    axios.get(loaderData.url).then((res) => {
+      setRows(res.data.map((row, i) => ({ ...row, id: i })))
+
+      // Setting default search params (if not provided)
+      if (!searchParams.get('indices') && !searchParams.get('scriptName')) {
+        setSearchParams({ indices: 'NIFTY' })
+      }
+    })
+  }, [])
 
   return (
     <Container
@@ -138,7 +133,7 @@ export default function OptionAnalysis() {
             label="Indicies"
             onChange={handleChange}
           >
-            {indicesNames.map((item, index) => {
+            {indices.map((item, index) => {
               return (
                 <MenuItem disabled={index === 0} selected={index === 0} key={index} value={item}>
                   {item}
@@ -204,33 +199,17 @@ export default function OptionAnalysis() {
           mt: 2,
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-around',
-            p: '1rem 1.5rem',
-          }}
-        >
-          <Typography variant="h6" sx={{ my: 'auto' }}>
-            Call
-          </Typography>
-          <Typography variant="h6" sx={{ my: 'auto' }}>
-            Put
-          </Typography>
-        </Box>
         <DataGrid
-          rows={data}
+          rows={rows}
           rowHeight={25}
           columns={AnalysisColumns}
           pageSizeOptions={[25]}
           initialState={{ pagination: { paginationModel: { pageSize: 25 } } }}
-          getRowId={(row) => row.CEOptionType + row.Strike}
-          // autoPageSize
         />
       </Box>
 
       <Box sx={{ mt: 2 }}>
-        <AnalysisTable label="Call" data={rows} />
+        <AnalysisTable label="Call" data={data} />
       </Box>
     </Container>
   )

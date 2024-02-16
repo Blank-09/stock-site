@@ -29,13 +29,6 @@ const dashboardData = [
     stockPriceChange: '-197.80',
     stockPriceChangePercent: '-0.91',
   },
-  // {
-  //   name: 'NIFTY',
-  //   img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
-  //   stockPrice: '21,513.00',
-  //   stockPriceChange: '197.80',
-  //   stockPriceChangePercent: '0.91',
-  // },
   {
     name: 'NIFTY',
     img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Nifty_50_Logo.svg/1200px-Nifty_50_Logo.svg.png',
