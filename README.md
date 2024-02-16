@@ -78,4 +78,4 @@ npm run preview
 
 ---
 
-&copy; 2023 Stock Site
+&copy; 2024 Team Falcons
